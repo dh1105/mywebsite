@@ -2,17 +2,17 @@ import React, {Component} from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
 
-class Home extends Component {
+class AboutMe extends Component {
 
     render(){
         return(
             <div>
                 <Header />
-                Hello
+                About me
                 <Footer />
             </div>
         )
     }
 }
 
-export default Home;
+export default AboutMe;

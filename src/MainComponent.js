@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Router, Switch, Route, Redirect } from 'react-router-dom';
 import { history } from './_helpers';
 import Home from './Home/HomeComponent'
+import AboutMe from './AboutMe/AboutMeComponent'
+import Footer from './FooterComponent'
 
 class Main extends Component {
 
@@ -17,6 +19,7 @@ class Main extends Component {
                 <Router history={history}>
                     <Switch>
                         <Route path="/home" component={Home} />
+                        <Route path="/aboutme" component={AboutMe} />
                         <Redirect to="/home" />
                     </Switch>
                 </Router>
