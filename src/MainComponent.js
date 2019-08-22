@@ -19,7 +19,7 @@ class Main extends Component {
                 <Router history={history}>
                     <Switch>
                         <Route path="/home" component={Home} />
-                        <Route path="/aboutme" component={AboutMe} />
+                        <Route path="/about" component={AboutMe} />
                         <Redirect to="/home" />
                     </Switch>
                 </Router>

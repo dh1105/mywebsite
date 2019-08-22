@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { MdMailOutline } from 'react-icons/md'
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
+import myimage from './assets/myimage.jpg'
 
 class Footer extends Component {
 
@@ -15,20 +16,29 @@ class Footer extends Component {
 
     render() {
         return (
-            <div className="footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-auto">
-                            <FaGithub size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://github.com/dh1105")} />
-                            <FaLinkedinIn size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")}/>
-                            <FaInstagram size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")}/>
-                            <FaFacebookF size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")}/>
-                            <MdMailOutline size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={this.onClickMail} />
-                        </div>
+            <div>
+                <div className="container" style={{marginBottom: "20px"}}>
+                    <hr />
+                    <div>
+                        <img src={myimage} alt="Dhruv Verma" style={{height: '20%', width: '20%', WebkitBorderRadius: '50%'}} />
                     </div>
-                    <div className="row">
-                        <div className="col-auto">
-                            <p style={{marginTop: '10px'}}>© Dhruv Verma</p>
+                    <h3 style={{marginTop: '10px', fontFamily: "Open Sans"}}>Dhruv Verma</h3>
+                </div>
+                <div className="footer">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-auto">
+                                <FaGithub size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer', color: '#e9ecef' }} onClick={() => this.openUrl("https://github.com/dh1105")} />
+                                <FaLinkedinIn size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer', color: '#e9ecef' }} onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
+                                <FaInstagram size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer', color: '#e9ecef' }} onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
+                                <FaFacebookF size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer', color: '#e9ecef' }} onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
+                                <MdMailOutline size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer', color: '#e9ecef' }} onClick={this.onClickMail} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-auto">
+                                <p style={{ marginTop: '10px', color: '#e9ecef' }}>© Dhruv Verma</p>
+                            </div>
                         </div>
                     </div>
                 </div>

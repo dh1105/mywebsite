@@ -23,17 +23,26 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar dark expand="md" sticky={'top'}>
+                <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         {/* <NavbarBrand className="mr-auto" href="/"></NavbarBrand> */}
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
+                                    <NavLink className="nav-link" to='/home'>Home</NavLink>
                                 </NavItem>
                                 <NavItem style={{marginLeft: '10px'}}>
-                                    <NavLink className="nav-link" to='/aboutme'><span className="fa fa-info fa-lg"></span> About me</NavLink>
+                                    <NavLink className="nav-link" to='/about'>About</NavLink>
+                                </NavItem>
+                                <NavItem style={{marginLeft: '10px'}}>
+                                    <NavLink className="nav-link" to='/resume'>Resume</NavLink>
+                                </NavItem>
+                                <NavItem style={{marginLeft: '10px'}}>
+                                    <NavLink className="nav-link" to='/resume'>Projects</NavLink>
+                                </NavItem>
+                                <NavItem style={{marginLeft: '10px'}}>
+                                    <NavLink className="nav-link" to='/resume'>Contact</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
