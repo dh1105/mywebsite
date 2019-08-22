@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { MdMailOutline } from 'react-icons/md'
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
 import myimage from './assets/myimage.jpg'
@@ -16,13 +15,16 @@ class Footer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <div className="container" style={{marginBottom: "20px"}}>
                     <hr />
                     <div>
                         <img src={myimage} alt="Dhruv Verma" style={{height: '20%', width: '20%', WebkitBorderRadius: '50%'}} />
                     </div>
                     <h3 style={{marginTop: '10px', fontFamily: "Open Sans"}}>Dhruv Verma</h3>
+                    <span style={{ fontFamily: "Open Sans", cursor: "pointer", marginTop: '10px' }} onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
+                    <hr />
+                    <p style={{marginTop: '10px', fontFamily: "Open Sans"}}>Hi, I am Dhruv. I like to make things. I am a Computer Science graduate from Manipal Institute of Technology and am currently working at Hewlett Packard Enterprise in Bangalore, India.</p>
                 </div>
                 <div className="footer">
                     <div className="container">
