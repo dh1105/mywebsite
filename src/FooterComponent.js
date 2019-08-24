@@ -19,12 +19,12 @@ class Footer extends Component {
                 <div className="container" style={{marginBottom: "20px"}}>
                     <hr />
                     <div>
-                        <img src={myimage} alt="Dhruv Verma" style={{height: '20%', width: '20%', WebkitBorderRadius: '50%'}} />
+                        <img src={myimage} alt="Dhruv Verma" style={{height: '200px', width: '200px', WebkitBorderRadius: '50%'}} />
                     </div>
                     <h3 style={{marginTop: '10px', fontFamily: "Open Sans"}}>Dhruv Verma</h3>
-                    <span style={{ fontFamily: "Open Sans", cursor: "pointer", marginTop: '10px' }} onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
+                    <span style={{ cursor: "pointer", marginTop: '10px', fontFamily: "Montserrat" }} onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
                     <hr />
-                    <p style={{marginTop: '10px', fontFamily: "Open Sans"}}>Hi, I am Dhruv. I like to make things. I am a Computer Science graduate from Manipal Institute of Technology and am currently working at Hewlett Packard Enterprise in Bangalore, India.</p>
+                    <p style={{marginTop: '10px', fontFamily: "Montserrat"}}>Hi, I am Dhruv. I like to make things. I am a Computer Science graduate from Manipal Institute of Technology and am currently working at Hewlett Packard Enterprise in Bangalore, India.</p>
                 </div>
                 <div className="footer">
                     <div className="container">

@@ -24,7 +24,7 @@ class Contact extends Component {
                         {/* <h1 style={{marginTop: '10px'}}>Hello, welcome to my website!</h1> */}
                         <Card style={{ width: '100%', marginTop: '100px', marginBottom: '50px' }}>
                             <CardBody>
-                                <h2 style={{marginTop: '10px', marginBottom: '30px'}}>Contact</h2>
+                                <h2 style={{marginTop: '10px', marginBottom: '30px', fontFamily: "Open Sans"}}>Contact</h2>
                                 <hr />
                                 <p style={{ fontFamily: "Montserrat" }}>Feel free to get in touch with me. You can email me at:</p>
                                 <span style={{ fontFamily: "Montserrat", cursor: "pointer" }} onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
