@@ -1,0 +1,35 @@
+.button {
+    border-radius: 0;
+    color: #393f4d !important;
+    background-color: white !important;
+    border-color: white !important
+}
+
+.button:hover {
+    border: 2;
+    border-color: #393f4d !important;
+    border-radius: 0px, 0px, 0px, 0px;
+}
+
+.button:focus,.button:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
+
+.selected-button {
+    border-radius: 0;
+    color: #393f4d !important;
+    background-color: white !important;
+    border-color: #393f4d !important
+}
+
+.selected-button:hover {
+    border: 2;
+    border-color: #393f4d !important;
+    border-radius: 0px, 0px, 0px, 0px;
+}
+
+.selected-button:focus,.selected-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
