@@ -15,44 +15,51 @@ const skills = {
         Keras: 4,
         Tensorflow: 4,
         Matlab: 3,
-        Numpy: 3
+        Numpy: 3,
+        color: "primary"
     },
     Languages: {
         Java: 5,
         Python: 5,
         C: 4,
         Javascript: 3,
-        Matlab: 3
+        Matlab: 3,
+        color: "secondary"
     },
     Frameworks: {
         React: 5,
         Bootstrap: 5,
         Android: 5,
         MySQL: 4,
-        Flask: 4
+        Flask: 4,
+        color: "success"
     },
     Tools: {
         Git: 4,
-        Heroku: 3
+        Heroku: 3,
+        color: "danger"
     },
     Design: {
         Lightroom: 5,
-        Photoshop: 3
+        Photoshop: 3,
+        color: "warning"
     },
     WebDevelopment: {
         React: 5,
-        BootStrap: 5,
+        Bootstrap: 5,
         Flask: 4,
         REST: 4,
         MongoDB: 3,
-        CSS: 3
+        CSS: 3,
+        color: "info"
     },
     Python: {
         Python: 5,
         Keras: 4,
         Tensorflow: 4,
         Flask: 4,
-        Numpy: 3
+        Numpy: 3,
+        color: ""
     }
 }
 
@@ -105,12 +112,13 @@ class Resume extends Component {
         var uniqueSkills = {}
         for (var skill in skills) {
             var indivSkills = skills[skill]
-            for (var indivSkill in indivSkills){
-                if (!(indivSkill in uniqueSkills)){
-                    uniqueSkills[indivSkill] = indivSkills[indivSkill]
+            for (var indivSkill in indivSkills) {
+                if (!(indivSkill in uniqueSkills) && indivSkill.toString() !== "color") {
+                    var concatVal = indivSkills[indivSkill] + "-" + indivSkills.color
+                    uniqueSkills[indivSkill] = concatVal 
                 }
             }
-        } 
+        }
         return uniqueSkills
     }
 
@@ -135,24 +143,25 @@ class Resume extends Component {
         }
 
         var prog_bar = []
-        console.log(index)
 
         if (index !== 0) {
             var skillObj = skills[skillMap[index]]
             for (var obj in skillObj) {
-                var value = (skillObj[obj] / 5) * 100
-                prog_bar.push(
-                    <Progress value={value} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{skillObj[obj]}/5</Progress>
-                )
+                if (obj.toString() !== "color") {
+                    var value = (skillObj[obj] / 5) * 100
+                    prog_bar.push(
+                        <Progress value={value} color={skillObj.color} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{skillObj[obj]}/5</Progress>
+                    )
+                }
             }
         }
         else {
             const uniqueSkills = this.getUniqueSkills()
-            console.log(uniqueSkills)
-            for (obj in uniqueSkills){
-                value = (uniqueSkills[obj] / 5) * 100;
+            for (obj in uniqueSkills) {
+                var valAndColor = uniqueSkills[obj].split("-")
+                value = (parseInt(valAndColor[0]) / 5) * 100;
                 prog_bar.push(
-                    <Progress value={value} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{uniqueSkills[obj]}/5</Progress>
+                    <Progress value={value} color={valAndColor[1]} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{valAndColor[0]}/5</Progress>
                 )
             }
         }
@@ -186,16 +195,8 @@ class Resume extends Component {
                                     <h6 style={font}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
                                     <p style={font}>July 2019 - Present</p>
                                     <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={font}>Working in the 3PAR File Personna Team to develop a CLI interface for file storage</li>
+                                        <li style={font}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
                                         <li style={font}>Understanding the product end-to-end by developing features and testing their functionality</li>
-                                    </ul>
-                                </div>
-                                <div style={{ marginBottom: '50px' }}>
-                                    <h6 style={font}><b>Hewlett Packard Enterprise - R&D Intern</b></h6>
-                                    <p style={font}>January 2019 - July 2019</p>
-                                    <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={font}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
-                                        <li style={font}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
                                     </ul>
                                 </div>
                                 <div style={{ marginBottom: '50px' }}>
