@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
-import { Card, CardBody, Row, Progress, Button, ButtonGroup } from 'reactstrap';
+import { Card, CardBody, Row, Progress, Button } from 'reactstrap';
 import * as Scroll from 'react-scroll';
-import { all } from 'q';
 import './ButtonStyle.css';
 
 const fontForHeadings = { marginRight: '20px', fontFamily: "Montserrat", cursor: "pointer" }
@@ -138,22 +137,22 @@ class Resume extends Component {
         var prog_bar = []
         console.log(index)
 
-        if (index != 0) {
+        if (index !== 0) {
             var skillObj = skills[skillMap[index]]
             for (var obj in skillObj) {
                 var value = (skillObj[obj] / 5) * 100
                 prog_bar.push(
-                    <Progress value={value} style={{ marginBottom: '15px' }}>{obj}{' '}{skillObj[obj]}/5</Progress>
+                    <Progress value={value} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{skillObj[obj]}/5</Progress>
                 )
             }
         }
         else {
             const uniqueSkills = this.getUniqueSkills()
             console.log(uniqueSkills)
-            for (var obj in uniqueSkills){
-                var value = (uniqueSkills[obj] / 5) * 100;
+            for (obj in uniqueSkills){
+                value = (uniqueSkills[obj] / 5) * 100;
                 prog_bar.push(
-                    <Progress value={value} style={{ marginBottom: '15px' }}>{obj}{' '}{uniqueSkills[obj]}/5</Progress>
+                    <Progress value={value} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{uniqueSkills[obj]}/5</Progress>
                 )
             }
         }
