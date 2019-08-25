@@ -1,0 +1,18 @@
+.icon {
+    color: #e9ecef;
+    margin-inline-end: 20px;
+    cursor: pointer;
+}
+
+.icon :hover{
+    color: #57a0d3;
+}
+
+.contact-icon {
+    margin-inline-end: 20px;
+    cursor: pointer;
+}
+
+.contact-icon :hover{
+    color: #57a0d3;
+}

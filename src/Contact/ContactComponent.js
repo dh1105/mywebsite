@@ -4,6 +4,7 @@ import Footer from '../FooterComponent'
 import { Card, CardBody } from 'reactstrap';
 import { MdMailOutline } from 'react-icons/md'
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
+import '../Icons.css'
 
 class Contact extends Component {
 
@@ -27,14 +28,14 @@ class Contact extends Component {
                                 <h2 style={{marginTop: '10px', marginBottom: '30px', fontFamily: "Open Sans"}}>Contact</h2>
                                 <hr />
                                 <p style={{ fontFamily: "Montserrat" }}>Feel free to get in touch with me. You can email me at:</p>
-                                <span style={{ fontFamily: "Montserrat", cursor: "pointer" }} onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
+                                <span className="contact" onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
                                 <div className="row" style={{marginTop: '50px'}}>
                                     <div className="col-auto">
-                                        <FaGithub size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://github.com/dh1105")} />
-                                        <FaLinkedinIn size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
-                                        <FaInstagram size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
-                                        <FaFacebookF size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
-                                        <MdMailOutline size={20} style={{ marginInlineEnd: '20px', cursor: 'pointer' }} onClick={this.onClickMail} />
+                                        <FaGithub size={20} className="contact-icon" onClick={() => this.openUrl("https://github.com/dh1105")} />
+                                        <FaLinkedinIn size={20} className="contact-icon" onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
+                                        <FaInstagram size={20} className="contact-icon" onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
+                                        <FaFacebookF size={20} className="contact-icon" onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
+                                        <MdMailOutline size={20} className="contact-icon" onClick={this.onClickMail} />
                                     </div>
                                 </div>
                             </CardBody>

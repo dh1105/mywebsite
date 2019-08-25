@@ -15,8 +15,6 @@ import signlang from '../assets/signlang.png'
 import mergesort from '../assets/mergesort.png'
 import catvdogs from '../assets/catvdogs.jpg'
 
-const font = { fontFamily: "Montserrat" }
-
 class Projects extends Component {
 
     render() {
@@ -34,7 +32,7 @@ class Projects extends Component {
                                 <CardColumns>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Anomaly detection in a panoramic mouth X-ray</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>August 2018</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>August 2018</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={pan} alt="Panoramic x-ray" />
@@ -47,7 +45,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Semantic similarity between short paragraphs</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>August 2019</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>August 2019</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={word2vec} alt="Image generated using the NST algorithm" />
@@ -60,7 +58,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Neural Style Transfer Algorithm</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>March 2019</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>March 2019</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={nstsnowy} alt="Image generated using the NST algorithm" />
@@ -73,7 +71,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>YOLOv2</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>February 2019</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>February 2019</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={yolo} alt="YOLOv2 bounding box" />
@@ -85,7 +83,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Trigger word detection</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>January 2019</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>January 2019</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={alexa} alt="Alexa, a device using this algorithm" />
@@ -97,7 +95,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>ChatApp</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>August 2017</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>August 2017</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={chat} alt="Sample UI of the chatapp" />
@@ -109,7 +107,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Sign Language detection</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>January 2019</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>January 2019</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={signlang} alt="Sign Language alphabet" />
@@ -121,7 +119,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Merge sort using mutlithreading</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>October 2017</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>October 2017</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={mergesort} alt="Merge sort" />
@@ -133,7 +131,7 @@ class Projects extends Component {
                                     </Card>
                                     <Card>
                                         <CardTitle style={{ fontFamily: "Open Sans", marginLeft: "15px", marginTop: "30px" }}>Cats vs Dogs classifier</CardTitle>
-                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat" }}>December 2018</CardSubtitle>
+                                        <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Montserrat", fontWeight: "300" }}>December 2018</CardSubtitle>
                                         <CardBody>
                                             <div style={{ textAlign: "center", marginBottom: "10px" }}>
                                                 <CardImg top src={catvdogs} alt="Cats vs dogs" />

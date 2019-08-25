@@ -90,4 +90,33 @@
   border-width: 3;
 }
 
+.footer-email {
+  cursor: pointer;
+  margin-top: '10px';
+  font-family: "Montserrat";
+  font-weight: 300;
+}
 
+.footer-email:hover {
+  color: #57a0d3;
+}
+
+.contact {
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.contact:hover {
+  color: #57a0d3;
+}
+
+.resume-heading {
+  margin-right: 20px;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.resume-heading:hover{
+  color: #57a0d3
+}

@@ -33,3 +33,13 @@
     outline: none !important;
     box-shadow: none !important;
  }
+
+ .heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  .subheading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
