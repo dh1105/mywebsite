@@ -32,6 +32,7 @@ const skills = {
         Android: 5,
         MySQL: 4,
         Flask: 4,
+        Firebase: 4,
         color: "success"
     },
     Tools: {
@@ -49,6 +50,7 @@ const skills = {
         Bootstrap: 5,
         Flask: 4,
         REST: 4,
+        Firebase: 4,
         MongoDB: 3,
         CSS: 3,
         color: "info"
