@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mywebsite/static/css/main.ff8943ac.chunk.css",
+    "main.js": "/mywebsite/static/js/main.92fc926f.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.92fc926f.chunk.js.map",
+    "runtime~main.js": "/mywebsite/static/js/runtime~main.6cf47a3d.js",
+    "runtime~main.js.map": "/mywebsite/static/js/runtime~main.6cf47a3d.js.map",
+    "static/css/2.bb4ba17c.chunk.css": "/mywebsite/static/css/2.bb4ba17c.chunk.css",
+    "static/js/2.bebf74cc.chunk.js": "/mywebsite/static/js/2.bebf74cc.chunk.js",
+    "static/js/2.bebf74cc.chunk.js.map": "/mywebsite/static/js/2.bebf74cc.chunk.js.map",
+    "index.html": "/mywebsite/index.html",
+    "precache-manifest.038f3cb3ee64420802bf5dabf0e4df38.js": "/mywebsite/precache-manifest.038f3cb3ee64420802bf5dabf0e4df38.js",
+    "service-worker.js": "/mywebsite/service-worker.js",
+    "static/css/2.bb4ba17c.chunk.css.map": "/mywebsite/static/css/2.bb4ba17c.chunk.css.map",
+    "static/css/main.ff8943ac.chunk.css.map": "/mywebsite/static/css/main.ff8943ac.chunk.css.map",
+    "static/media/myimage.jpg": "/mywebsite/static/media/myimage.894e2d10.jpg"
+  }
+}
