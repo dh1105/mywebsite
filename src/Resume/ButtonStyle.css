@@ -2,7 +2,8 @@
     border-radius: 0;
     color: #393f4d !important;
     background-color: white !important;
-    border-color: white !important
+    border-color: white !important;
+    font-family: "Raleway";
 }
 
 .button:hover {
@@ -20,7 +21,8 @@
     border-radius: 0;
     color: #393f4d !important;
     background-color: white !important;
-    border-color: #393f4d !important
+    border-color: #393f4d !important;
+    font-family: "Raleway";
 }
 
 .selected-button:hover {

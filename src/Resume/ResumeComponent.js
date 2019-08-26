@@ -8,8 +8,9 @@ import './ButtonStyle.css';
 // const fontForHeadings = { marginRight: '20px', fontFamily: "Montserrat", cursor: "pointer" }
 // const lightFont = { fontFamily: "Montserrat", fontWeight: "300" }
 // const font = { fontFamily: "Montserrat" }
-const headingFont = { fontFamily: "Montserrat", fontWeight: "400" }
-const subHeadingFont = { fontFamily: "Montserrat", fontWeight: "300" }
+const headingFont = { fontFamily: "Raleway", fontWeight: "400" }
+const sentenceFont = { fontFamily: "Source Sans Pro" }
+const subHeadingFont = { fontFamily: "Raleway", fontWeight: "300" }
 var Element = Scroll.Element;
 var scroller = Scroll.scroller;
 
@@ -177,9 +178,9 @@ class Resume extends Component {
                 <div className="container">
                     <div className="col-auto">
                         {/* <h1 style={{marginTop: '10px'}}>Hello, welcome to my website!</h1> */}
-                        <Card style={{ width: '100%', marginTop: '100px', marginBottom: '50px' }}>
+                        <Card style={{ width: '100%', marginTop: '110px', marginBottom: '50px' }}>
                             <CardBody>
-                                <h2 style={{ marginTop: '10px', marginBottom: '20px', fontFamily: "Open Sans" }}>Resume</h2>
+                                <h2 style={{ marginTop: '10px', marginBottom: '20px', fontFamily: "Raleway", fontWeight: "400" }}><b>Resume</b></h2>
                                 <Row style={{ marginLeft: '1px' }}>
                                     <h5 className="resume-heading" onClick={() => this.scrollToElement("education")}>Education</h5>
                                     <h5 className="resume-heading" onClick={() => this.scrollToElement("experience")}>Experience</h5>
@@ -191,7 +192,7 @@ class Resume extends Component {
                                 <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
                                     <h5 style={headingFont}><b>Education</b></h5>
                                 </div>
-                                <p style={headingFont}>Bachelor of Technology, Computer Science and Engineering<br />Manipal Institute of Technology, 2019</p>
+                                <p style={sentenceFont}>Bachelor of Technology, Computer Science and Engineering<br />Manipal Institute of Technology, 2019</p>
                                 <Element name="experience" />
                                 <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
                                     <h5 style={headingFont}><b>Experience</b></h5>
@@ -200,36 +201,36 @@ class Resume extends Component {
                                     <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
                                     <p style={subHeadingFont}>July 2019 - Present</p>
                                     <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={headingFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
-                                        <li style={headingFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
+                                        <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
+                                        <li style={sentenceFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
                                     </ul>
                                 </div>
                                 <div style={{ marginBottom: '50px' }}>
                                     <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Intern</b></h6>
                                     <p style={subHeadingFont}>January 2019 - July 2019</p>
                                     <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={headingFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
-                                        <li style={headingFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
+                                        <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
+                                        <li style={sentenceFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
                                     </ul>
                                 </div>
                                 <div style={{ marginBottom: '50px' }}>
                                     <h6 style={headingFont}><b>Hochschule Emden/Leer - Summer Research Intern</b></h6>
                                     <p style={subHeadingFont}>May 2018 - July 2018</p>
                                     <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={headingFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
-                                        <li style={headingFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
-                                        <li style={headingFont}>Developed a python CoAP web-server using CoAPthon to service and store incoming sensor readings from remote nodes</li>
-                                        <li style={headingFont}>Contributed to the open-source RIOT operating system repo by adding support for the drivers mentioned above</li>
+                                        <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
+                                        <li style={sentenceFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
+                                        <li style={sentenceFont}>Developed a python CoAP web-server using CoAPthon to service and store incoming sensor readings from remote nodes</li>
+                                        <li style={sentenceFont}>Contributed to the open-source RIOT operating system repo by adding support for the drivers mentioned above</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <h6 style={headingFont}><b>TripOffbeat - Software development Intern</b></h6>
                                     <p style={subHeadingFont}>May 2017 - July 2017</p>
                                     <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={headingFont}>Developed an Android application to assist the sales team to serve clients</li>
-                                        <li style={headingFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
-                                        <li style={headingFont}>Got introduced to the REST framework and developed API's in PHP for the app to fetch data from the database</li>
-                                        <li style={headingFont}>Modified the MySQL database by introducing tables to allow authentication</li>
+                                        <li style={sentenceFont}>Developed an Android application to assist the sales team to serve clients</li>
+                                        <li style={sentenceFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
+                                        <li style={sentenceFont}>Got introduced to the REST framework and developed API's in PHP for the app to fetch data from the database</li>
+                                        <li style={sentenceFont}>Modified the MySQL database by introducing tables to allow authentication</li>
                                     </ul>
                                 </div>
                                 <Element name="skills" />

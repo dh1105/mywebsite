@@ -22,26 +22,26 @@ class Header extends Component {
 
     render() {
         return (
-            <Navbar dark expand="md" fixed="top">
+            <Navbar dark expand="md" fixed="top" style={{minHeight: "65px"}}>
                 <div className="container">
                     <NavbarToggler onClick={this.toggleNav} />
                     {/* <NavbarBrand className="mr-auto" href="/"></NavbarBrand> */}
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link" to='/home'>Home</NavLink>
+                                <NavLink className="nav-link" to='/home'><span style={{fontFamily: "Raleway"}}>HOME</span></NavLink>
                             </NavItem>
                             <NavItem style={{ marginLeft: '10px' }}>
-                                <NavLink className="nav-link" to='/about'>About</NavLink>
+                                <NavLink className="nav-link" to='/about'><span style={{fontFamily: "Raleway"}}>ABOUT</span></NavLink>
                             </NavItem>
                             <NavItem style={{ marginLeft: '10px' }}>
-                                <NavLink className="nav-link" to='/resume'>Resume</NavLink>
+                                <NavLink className="nav-link" to='/resume'><span style={{fontFamily: "Raleway"}}>RESUME</span></NavLink>
                             </NavItem>
                             <NavItem style={{ marginLeft: '10px' }}>
-                                <NavLink className="nav-link" to='/projects'>Projects</NavLink>
+                                <NavLink className="nav-link" to='/projects'><span style={{fontFamily: "Raleway"}}>PROJECTS</span></NavLink>
                             </NavItem>
                             <NavItem style={{ marginLeft: '10px' }}>
-                                <NavLink className="nav-link" to='/contact'>Contact</NavLink>
+                                <NavLink className="nav-link" to='/contact'><span style={{fontFamily: "Raleway"}}>CONTACT</span></NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

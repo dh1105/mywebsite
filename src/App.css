@@ -93,7 +93,7 @@
 .footer-email {
   cursor: pointer;
   margin-top: '10px';
-  font-family: "Montserrat";
+  font-family: "Raleway";
   font-weight: 300;
 }
 
@@ -103,8 +103,7 @@
 
 .contact {
   cursor: pointer;
-  font-family: "Montserrat";
-  font-weight: 400;
+  font-family: "Source Sans Pro";
 }
 
 .contact:hover {
@@ -113,7 +112,8 @@
 
 .resume-heading {
   margin-right: 20px;
-  font-family: "Montserrat";
+  font-family: "Raleway";
+  font-weight: 400;
   cursor: pointer;
 }
 
