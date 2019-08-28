@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
-import { Card, CardBody, Row, Progress, Button, li } from 'reactstrap';
+import { Card, CardBody, Row, Progress, Button, Col } from 'reactstrap';
 import * as Scroll from 'react-scroll';
 import './ButtonStyle.css';
+import manipal from '../assets/manipal.png'
+import hpe from '../assets/hpe.png'
+import emden from '../assets/emden.png'
+import tob from '../assets/tob.png'
+import tedx from '../assets/tedx.png'
+import ttt from '../assets/ttt.png'
 
 // const fontForHeadings = { marginRight: '20px', fontFamily: "Montserrat", cursor: "pointer" }
 // const lightFont = { fontFamily: "Montserrat", fontWeight: "300" }
@@ -203,46 +209,116 @@ class Resume extends Component {
                                 <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
                                     <h5 style={headingFont}><b>Education</b></h5>
                                 </div>
-                                <p style={sentenceFont}>Bachelor of Technology, Computer Science and Engineering<br />Manipal Institute of Technology, 2019</p>
+                                <div>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={manipal} style={{ height: "auto", width: "100px" }} alt="Manipal Insitute of Technology" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>Bachelor of Technology, Computer Science and Engineering</b></h6>
+                                            <p style={subHeadingFont}>2015 - 2019</p>
+                                            <p style={sentenceFont}>Manipal Institute of Technology, Manipal</p>
+                                        </Col>
+                                    </Row>
+                                </div>
                                 <Element name="experience" />
                                 <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
                                     <h5 style={headingFont}><b>Experience</b></h5>
                                 </div>
-                                <div style={{ marginBottom: '50px' }}>
-                                    <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
-                                    <p style={subHeadingFont}>July 2019 - Present</p>
-                                    <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
-                                        <li style={sentenceFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
-                                    </ul>
+                                <div style={{ marginBottom: '30px' }}>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
+                                            <p style={subHeadingFont}>July 2019 - Present</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
+                                                <li style={sentenceFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
                                 </div>
-                                <div style={{ marginBottom: '50px' }}>
-                                    <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Intern</b></h6>
-                                    <p style={subHeadingFont}>January 2019 - July 2019</p>
-                                    <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
-                                        <li style={sentenceFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
-                                    </ul>
+                                <div style={{ marginBottom: '30px' }}>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
+                                            <p style={subHeadingFont}>January 2019 - July 2019</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
+                                                <li style={sentenceFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
                                 </div>
-                                <div style={{ marginBottom: '50px' }}>
-                                    <h6 style={headingFont}><b>Hochschule Emden/Leer - Summer Research Intern</b></h6>
-                                    <p style={subHeadingFont}>May 2018 - July 2018</p>
-                                    <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
-                                        <li style={sentenceFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
-                                        <li style={sentenceFont}>Developed a python CoAP web-server using CoAPthon to service and store incoming sensor readings from remote nodes</li>
-                                        <li style={sentenceFont}>Contributed to the open-source RIOT operating system repo by adding support for the drivers mentioned above</li>
-                                    </ul>
+                                <div style={{ marginBottom: '30px' }}>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={emden} style={{ height: "auto", width: "150px" }} alt="Hochschule Emden/Leer" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>Hochschule Emden/Leer - Summer Research Intern</b></h6>
+                                            <p style={subHeadingFont}>May 2018 - July 2018</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
+                                                <li style={sentenceFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
+                                                <li style={sentenceFont}>Developed a python CoAP web-server using CoAPthon to service and store incoming sensor readings from remote nodes</li>
+                                                <li style={sentenceFont}>Contributed to the open-source RIOT operating system repo by adding support for the drivers mentioned above</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <div style={{ marginBottom: '30px' }}>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={tob} style={{ height: "auto", width: "150px" }} alt="TripOffbeat" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>TripOffbeat - Software development Intern</b></h6>
+                                            <p style={subHeadingFont}>May 2017 - July 2017</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Developed an Android application to assist the sales team to serve clients</li>
+                                                <li style={sentenceFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
+                                                <li style={sentenceFont}>Got introduced to the REST framework and developed API's in PHP for the app to fetch data from the database</li>
+                                                <li style={sentenceFont}>Modified the MySQL database by introducing tables to allow authentication</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <div style={{ marginBottom: '30px' }}>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={tedx} style={{ height: "auto", width: "150px" }} alt="TEDxManipal" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>TEDxManipal - Founder and Head Organiser</b></h6>
+                                            <p style={subHeadingFont}>March 2016 - May 2018</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Founded TEDxManipal (formerly known as TEDxManipalUniversity) in my first year under the license of TED Global, New York</li>
+                                                <li style={sentenceFont}>Responsible for the leading and organising a local TEDx conference in 2017 and 2018</li>
+                                                <li style={sentenceFont}>Invited a variety of speakers ranging from local student speakers to well-established scientists and musicians</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
                                 </div>
                                 <div>
-                                    <h6 style={headingFont}><b>TripOffbeat - Software development Intern</b></h6>
-                                    <p style={subHeadingFont}>May 2017 - July 2017</p>
-                                    <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                        <li style={sentenceFont}>Developed an Android application to assist the sales team to serve clients</li>
-                                        <li style={sentenceFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
-                                        <li style={sentenceFont}>Got introduced to the REST framework and developed API's in PHP for the app to fetch data from the database</li>
-                                        <li style={sentenceFont}>Modified the MySQL database by introducing tables to allow authentication</li>
-                                    </ul>
+                                    <Row>
+                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                            <img src={ttt} style={{ height: "auto", width: "100px" }} alt="The Think Tank" />
+                                        </Col>
+                                        <Col style={{ textAlign: "left" }}>
+                                            <h6 style={headingFont}><b>The Think Tank - Founder and President</b></h6>
+                                            <p style={subHeadingFont}>March 2016 - May 2018</p>
+                                            <ul style={{ padding: '0px 0px 0px 15px' }}>
+                                                <li style={sentenceFont}>Founded The Think Tank, a student club, in my first year to try and promote out-of-the-box-thinking amongst the students of my university</li>
+                                                <li style={sentenceFont}>Responsible for the leading and organising two fireside chats with Rakesh Sharma (The first Indian to go to space) and Dilip Chhabria (An Indian car designer) respectively for a crowd of 400+ students and faculty</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
                                 </div>
                                 <Element name="skills" />
                                 <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
