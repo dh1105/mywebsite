@@ -115,8 +115,17 @@
   font-family: "Raleway";
   font-weight: 400;
   cursor: pointer;
+  font-stretch: extra-expanded
 }
 
 .resume-heading:hover{
+  color: #57a0d3
+}
+
+.course {
+  cursor: pointer;
+}
+
+.course:hover{
   color: #57a0d3
 }

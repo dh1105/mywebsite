@@ -23,7 +23,7 @@ class Footer extends Component {
                     <div>
                         <img src={myimage} alt="Dhruv Verma" style={{ height: '200px', width: '200px', WebkitBorderRadius: '50%' }} />
                     </div>
-                    <h3 style={{ marginTop: '10px', fontFamily: "Raleway" }}>Dhruv Verma</h3>
+                    <h3 style={{ marginTop: '20px', fontFamily: "Raleway" }}>Dhruv Verma</h3>
                     <span className="footer-email" onClick={this.onClickMail}>dhruv.verma110597@gmail.com</span>
                     <hr />
                     <p style={{ marginTop: '10px', fontFamily: "Source Sans Pro", fontWeight: "300" }}>Hi, I am Dhruv. I like to make things. I am a Computer Science graduate from Manipal Institute of Technology and am currently working at Hewlett Packard Enterprise in Bangalore, India.</p>

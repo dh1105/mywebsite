@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
-import { Card, CardBody, Row, Progress, Button } from 'reactstrap';
+import { Card, CardBody, Row, Progress, Button, li } from 'reactstrap';
 import * as Scroll from 'react-scroll';
 import './ButtonStyle.css';
 
@@ -11,6 +11,7 @@ import './ButtonStyle.css';
 const headingFont = { fontFamily: "Raleway", fontWeight: "400" }
 const sentenceFont = { fontFamily: "Source Sans Pro" }
 const subHeadingFont = { fontFamily: "Raleway", fontWeight: "300" }
+const courseListStyle = { fontFamily: "Raleway", fontWeight: "300", marginRight: '30px' }
 var Element = Scroll.Element;
 var scroller = Scroll.scroller;
 
@@ -90,6 +91,10 @@ class Resume extends Component {
         }
     }
 
+    componentWillMount() {
+        window.scrollTo(0, 0);
+    }
+
     scrollToElement = (element) => {
         scroller.scrollTo(element, {
             duration: 500,
@@ -121,11 +126,15 @@ class Resume extends Component {
             for (var indivSkill in indivSkills) {
                 if (!(indivSkill in uniqueSkills) && indivSkill.toString() !== "color") {
                     var concatVal = indivSkills[indivSkill] + "-" + indivSkills.color
-                    uniqueSkills[indivSkill] = concatVal 
+                    uniqueSkills[indivSkill] = concatVal
                 }
             }
         }
         return uniqueSkills
+    }
+
+    openUrl = (url) => {
+        window.open(url, "_blank")
     }
 
     render() {
@@ -156,7 +165,9 @@ class Resume extends Component {
                 if (obj.toString() !== "color") {
                     var value = (skillObj[obj] / 5) * 100
                     prog_bar.push(
-                        <Progress value={value} color={skillObj.color} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>{obj}{' '}{skillObj[obj]}/5</Progress>
+                        <Progress value={value} color={skillObj.color} style={{ marginBottom: '15px', height: '30px', borderRadius: '2px' }}>
+                            {obj}{' '}{skillObj[obj]}/5
+                        </Progress>
                     )
                 }
             }
@@ -178,14 +189,14 @@ class Resume extends Component {
                 <div className="container">
                     <div className="col-auto">
                         {/* <h1 style={{marginTop: '10px'}}>Hello, welcome to my website!</h1> */}
-                        <Card style={{ width: '100%', marginTop: '110px', marginBottom: '50px' }}>
+                        <Card style={{ width: '100%', marginTop: '100px', marginBottom: '30px' }}>
                             <CardBody>
                                 <h2 style={{ marginTop: '10px', marginBottom: '20px', fontFamily: "Raleway", fontWeight: "400" }}><b>Resume</b></h2>
                                 <Row style={{ marginLeft: '1px' }}>
                                     <h5 className="resume-heading" onClick={() => this.scrollToElement("education")}>Education</h5>
                                     <h5 className="resume-heading" onClick={() => this.scrollToElement("experience")}>Experience</h5>
                                     <h5 className="resume-heading" onClick={() => this.scrollToElement("skills")}>Skills</h5>
-                                    <h5 className="resume-heading">Courses</h5>
+                                    <h5 className="resume-heading" onClick={() => this.scrollToElement("courses")}>Courses</h5>
                                 </Row>
                                 <hr />
                                 <Element name="education" />
@@ -242,6 +253,39 @@ class Resume extends Component {
                                 </div>
                                 <div>
                                     {prog_bar}
+                                </div>
+                                <Element name="courses" />
+                                <div className="App" style={{ marginTop: '40px', marginBottom: '30px' }}>
+                                    <h5 style={headingFont}><b>Courses</b></h5>
+                                </div>
+                                <div style={{ marginBottom: '50px' }} className="App">
+                                    <p style={headingFont}>
+                                        <b>CSE 2103</b><span style={courseListStyle}>: Data structures</span>
+                                        <b>CSE 2101</b><span style={courseListStyle}>: Computer organisation and design</span>
+                                        <b>CSE 2201</b><span style={courseListStyle}>: Formal language and automata theory</span>
+                                        <b>CSE 2202</b><span style={courseListStyle}>: Design and analysis of algorithms</span>
+                                        <b>CSE 2204</b><span style={courseListStyle}>: Database systems</span>
+                                        <b>CSE 3101</b><span style={courseListStyle}>: Computer architecture</span>
+                                        <b>CSE 3102</b><span style={courseListStyle}>: Operating systems</span>
+                                        <b>CSE 3102</b><span style={courseListStyle}>: Computer networks</span>
+                                        <b>CSE 2202</b><span style={courseListStyle}>: Design and analysis of algorithms</span>
+                                        <b>CSE 4027</b><span style={courseListStyle}>: Mobile application development</span>
+                                        <b>CSE 3201</b><span style={courseListStyle}>: Compiler design</span>
+                                        <b>CSE 3202</b><span style={courseListStyle}>: Parallel computer architecture and programming</span>
+                                        <b>CSE 4009</b><span style={courseListStyle}>: Artificial intelligence</span>
+                                        <b>CSE 4010</b><span style={courseListStyle}>: Machine learning</span>
+                                        <b>CSE 4011</b><span style={courseListStyle}>: Natural language processing</span>
+                                        <b>CSE 4012</b><span style={courseListStyle}>: Social network analysis</span>
+                                        <b>CSE 4031</b><span style={courseListStyle}>: Soft computing paradigms</span>
+                                        <b>CSE 4101</b><span style={courseListStyle}>: Internet technologies</span>
+                                        <b>CSE 4111</b><span style={courseListStyle}>: Distributed and cloud computing</span>
+                                    </p>
+                                    <p style={headingFont}>
+                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/specialization/certificate/Y9ELV3DLZV5L")}><b>Coursera</b><span style={courseListStyle}>: Deep Learning specialization</span></span>
+                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/specialization/certificate/QFY7X3FPRM5P")}><b>Coursera</b><span style={courseListStyle}>: Python for everybody specialization</span></span>
+                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/certificate/VH92QELLCVNK")}><b>Coursera</b><span style={courseListStyle}>: Front-end development with React</span></span>
+                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/certificate/YLAVGVFZ384W")}><b>Coursera</b><span style={courseListStyle}>: Machine Learning</span></span>
+                                    </p>
                                 </div>
                             </CardBody>
                         </Card>
