@@ -211,7 +211,7 @@ class Resume extends Component {
                                 </div>
                                 <div>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={manipal} style={{ height: "auto", width: "100px" }} alt="Manipal Insitute of Technology" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -227,7 +227,7 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -242,7 +242,7 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -257,7 +257,7 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={emden} style={{ height: "auto", width: "150px" }} alt="Hochschule Emden/Leer" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -274,7 +274,7 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={tob} style={{ height: "auto", width: "150px" }} alt="TripOffbeat" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -291,7 +291,7 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={tedx} style={{ height: "auto", width: "150px" }} alt="TEDxManipal" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
@@ -307,7 +307,7 @@ class Resume extends Component {
                                 </div>
                                 <div>
                                     <Row>
-                                        <Col sm="3" md={{ size: 2, offset: 1 }} lg={{ size: 2, offset: 1 }} style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
                                             <img src={ttt} style={{ height: "auto", width: "100px" }} alt="The Think Tank" />
                                         </Col>
                                         <Col style={{ textAlign: "left" }}>
