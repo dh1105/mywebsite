@@ -212,7 +212,7 @@ class Resume extends Component {
                                 <div>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={manipal} style={{ height: "auto", width: "100px" }} alt="Manipal Insitute of Technology" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://manipal.edu/mit.html"><img src={manipal} style={{ height: "auto", width: "100px" }} alt="Manipal Insitute of Technology" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>Bachelor of Technology, Computer Science and Engineering</b></h6>
@@ -228,7 +228,7 @@ class Resume extends Component {
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://hpe.com/"><img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
@@ -243,7 +243,7 @@ class Resume extends Component {
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://hpe.com/"><img src={hpe} style={{ height: "auto", width: "150px" }} alt="Hewlett Packard Enterprise" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>Hewlett Packard Enterprise - R&D Engineer</b></h6>
@@ -258,7 +258,7 @@ class Resume extends Component {
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={emden} style={{ height: "auto", width: "150px" }} alt="Hochschule Emden/Leer" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.hs-emden-leer.de/"><img src={emden} style={{ height: "auto", width: "150px" }} alt="Hochschule Emden/Leer" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>Hochschule Emden/Leer - Summer Research Intern</b></h6>
@@ -275,7 +275,7 @@ class Resume extends Component {
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={tob} style={{ height: "auto", width: "150px" }} alt="TripOffbeat" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.tripoffbeat.com/"><img src={tob} style={{ height: "auto", width: "150px" }} alt="TripOffbeat" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>TripOffbeat - Software development Intern</b></h6>
@@ -292,7 +292,7 @@ class Resume extends Component {
                                 <div style={{ marginBottom: '30px' }}>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={tedx} style={{ height: "auto", width: "150px" }} alt="TEDxManipal" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/TEDxManipal19/"><img src={tedx} style={{ height: "auto", width: "150px" }} alt="TEDxManipal" /></a>
                                         </Col>
                                         <Col md="9" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>TEDxManipal - Founder and Head Organiser</b></h6>
@@ -308,9 +308,9 @@ class Resume extends Component {
                                 <div>
                                     <Row>
                                         <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
-                                            <img src={ttt} style={{ height: "auto", width: "100px" }} alt="The Think Tank" />
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/TheThinkTankMIT/"><img src={ttt} style={{ height: "auto", width: "100px" }} alt="The Think Tank" /></a>
                                         </Col>
-                                        <Col md="9" style={{ textAlign: "left" }}>
+                                        <Col md="8" style={{ textAlign: "left" }}>
                                             <h6 style={headingFont}><b>The Think Tank - Founder and President</b></h6>
                                             <p style={subHeadingFont}>March 2016 - May 2018</p>
                                             <ul style={{ padding: '0px 0px 0px 15px' }}>
