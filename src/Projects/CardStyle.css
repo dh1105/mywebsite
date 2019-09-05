@@ -1,0 +1,9 @@
+.cardbody {
+    opacity: 0;
+}
+
+.cardbody:hover {
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #393f4d;
+  }
