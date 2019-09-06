@@ -15,6 +15,8 @@ import chat from '../assets/chat.jpg'
 import signlang from '../assets/signlang.png'
 import mergesort from '../assets/mergesort.png'
 import catvdogs from '../assets/catvdogs.jpg'
+import { FaDog, FaTooth, FaSignLanguage, FaCar, FaMicrophone, FaPaintBrush, FaAndroid, FaCode } from 'react-icons/fa'
+import { MdLanguage } from 'react-icons/md'
 
 class Projects extends Component {
 
@@ -34,34 +36,20 @@ class Projects extends Component {
                         <h2 style={{ marginTop: '100px', marginBottom: '20px', fontFamily: "Raleway" }}><b>Projects</b></h2>
                         <p style={{ fontFamily: "Raleway", fontWeight: "300" }}>A selection of some of my projects</p>
                         <hr />
-                        <VerticalTimeline layout="1-column">
+                        <VerticalTimeline>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="July 2019 - present"
+                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                icon={<MdLanguage />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={pan} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
-                                    </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Anomaly detection in a panoramic mouth X-ray</h3>
-                                        <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Worked under Dr. Srikanth Prabhu to develop a CNN to classify a dental x-ray as either 'standard' or 'anomalous' based on the number of teeth in
-                                            the mouth and their position.
-                                        </p>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={word2vec} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Word2Vec" />
                                     </Col>
                                 </Row>
-                            </VerticalTimelineElement>
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={word2vec} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
-                                    </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Semantic similarity between short paragraphs</h3>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Semantic similarity between short paragraphs</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Currently working under Professor Muralikrishna SN to develop an algorithm to detect similarity between two small paragraphs, consisting of multiple sentences, by extending the MaLSTM approach
                                                 to detect sentence similarity.
@@ -71,14 +59,17 @@ class Projects extends Component {
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="March 2019"
+                                iconStyle={{ background: '#228B22', color: '#fff' }}
+                                icon={<FaPaintBrush />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={nstsnowy} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={nstsnowy} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="NST algo" />
                                     </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Neural Style Transfer Algorithm</h3>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Neural Style Transfer Algorithm</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Using a CNN, I implemented the NST algorithm to generate a new image from two input images by taking the
                                                     content of the first image and the style of the second. This is a picture of my pup generated using the Starry Night by Van Gogh!
@@ -88,30 +79,17 @@ class Projects extends Component {
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="January 2019 - March 2019"
+                                iconStyle={{ background: '#57a0d3', color: '#fff' }}
+                                icon={<FaMicrophone />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={yolo} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
-                                    </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>YOLOv2</h3>
-                                        <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Implemented the You Only Look Once (YOLOv2) algorithm for object detection using a CNN. The bounding box accuracy was increased using Non-Max Suppression.
-                                            </p>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={alexa} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Trigger word" />
                                     </Col>
                                 </Row>
-                            </VerticalTimelineElement>
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={alexa} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
-                                    </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Trigger word detection</h3>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Trigger word detection</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Developed a deep learning model to detect a spoken trigger word. Implemeted the model using a 1 convolutional layer and 2 GRU layers.
                                            </p>
@@ -120,30 +98,36 @@ class Projects extends Component {
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="January 2019 - February 2019"
+                                iconStyle={{ background: '#FFAA1D', color: "#fff" }}
+                                icon={<FaCar />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={chat} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={yolo} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="YOLOv2" />
                                     </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>ChatApp</h3>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>YOLOv2</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Made an Android chat application with real time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
+                                            Implemented the You Only Look Once (YOLOv2) algorithm for object detection using a CNN. The bounding box accuracy was increased using Non-Max Suppression.
                                             </p>
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="December 2018 - January 2019"
+                                iconStyle={{ background: '#000080', color: '#fff' }}
+                                icon={<FaSignLanguage />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={signlang} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={signlang} style={{ height: "auto", width: "50%", marginTop: "10px" }} alt="Sign language" />
                                     </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Sign Language detection</h3>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Sign Language detection</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Worked on making a CNN to detect sign language alphabets in a given image.
                                     </p>
@@ -152,14 +136,56 @@ class Projects extends Component {
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="July 2017 - October 2018"
+                                iconStyle={{ background: '#d00000', color: '#fff' }}
+                                icon={<FaTooth />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={mergesort} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={pan} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Panoramic X-ray" />
                                     </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Merge sort using mutlithreading</h3>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Anomaly detection in a panoramic mouth X-ray</b></h4>
+                                        <p style={{ fontFamily: "Source Sans Pro" }}>
+                                            Worked under Dr. Srikanth Prabhu to develop a CNN to classify a dental x-ray as either 'standard' or 'anomalous' based on the number of teeth in
+                                            the mouth and their position.
+                                        </p>
+                                    </Col>
+                                </Row>
+                            </VerticalTimelineElement>
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="January 2018"
+                                iconStyle={{ background: '#EE7600', color: '#fff' }}
+                                icon={<FaDog />}>
+                                <Row>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={catvdogs} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Cats vs dogs" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Cats vs Dogs classifier</b></h4>
+                                        <p style={{ fontFamily: "Source Sans Pro" }}>
+                                            Got introduced to CNNs by making one to classify an input image as either a cat or a dog.
+                                    </p>
+                                    </Col>
+                                </Row>
+                            </VerticalTimelineElement>
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="October 2017"
+                                iconStyle={{ background: '#393f4d', color: '#fff' }}
+                                icon={<FaCode />}>
+                                <Row>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={mergesort} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Merge sort" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Multithreaded merge-sort</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Implemented a mutli-threaded merge sort to demonstrate the use of multi-threading in my OS class.
                                     </p>
@@ -168,17 +194,20 @@ class Projects extends Component {
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="2011 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+                                date="August 2016 - November 2016"
+                                iconStyle={{ background: '#3DDB86', color: '#fff' }}
+                                icon={<FaAndroid />}>
                                 <Row>
-                                    <Col sm="3" md="3" lg="3" style={{ textAlign: "center" }}>
-                                        <img src={catvdogs} style={{ height: "auto", width: "100%", marginTop: "10px" }} />
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={chat} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="ChatApp" />
                                     </Col>
-                                    <Col md="9" lg="9" style={{ textAlign: "left" }}>
-                                        <h3 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}>Cats vs Dogs classifier</h3>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}><b>ChatApp</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Got introduced to CNNs by making one to classify an input image as either a cat or a dog.
-                                    </p>
+                                            Made an Android chat application with real time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
+                                            </p>
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
