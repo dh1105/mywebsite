@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eecfe53091932ef842c9bc096c5c619f",
+    "revision": "7aa5a1e923403cb068b0a0aa0268c627",
     "url": "/mywebsite/index.html"
   },
   {
-    "revision": "ac23c8dbe21cd4037163",
-    "url": "/mywebsite/static/css/2.bb4ba17c.chunk.css"
+    "revision": "6a75ea278e4f28539ddb",
+    "url": "/mywebsite/static/css/2.c376e598.chunk.css"
   },
   {
-    "revision": "9926000a1aa1aef32919",
-    "url": "/mywebsite/static/css/main.079c811f.chunk.css"
+    "revision": "421245953e4a92db0c1e",
+    "url": "/mywebsite/static/css/main.b98561c9.chunk.css"
   },
   {
-    "revision": "ac23c8dbe21cd4037163",
-    "url": "/mywebsite/static/js/2.99816ad0.chunk.js"
+    "revision": "6a75ea278e4f28539ddb",
+    "url": "/mywebsite/static/js/2.798b093a.chunk.js"
   },
   {
-    "revision": "9926000a1aa1aef32919",
-    "url": "/mywebsite/static/js/main.ed858863.chunk.js"
+    "revision": "421245953e4a92db0c1e",
+    "url": "/mywebsite/static/js/main.3f7ffc32.chunk.js"
   },
   {
     "revision": "a8f2e89e572ebb9ec10c",
@@ -34,18 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fbca4861510fbc1306b8aa3547d084aa",
     "url": "/mywebsite/static/media/chat.fbca4861.jpg"
-  },
-  {
-    "revision": "fb9b1f2428e95dcef1001c42d6d9a673",
-    "url": "/mywebsite/static/media/emden.fb9b1f24.png"
-  },
-  {
-    "revision": "6bbafe5d53ffe6f5266e0ac14618355f",
-    "url": "/mywebsite/static/media/hpe.6bbafe5d.png"
-  },
-  {
-    "revision": "d34f2c4baea48d03e9c2dd1ec42aaa97",
-    "url": "/mywebsite/static/media/manipal.d34f2c4b.png"
   },
   {
     "revision": "567496127084e388f88b84cfe00fa3db",
@@ -66,18 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "42fb9b3738107339467cb04962514424",
     "url": "/mywebsite/static/media/signlang.42fb9b37.png"
-  },
-  {
-    "revision": "dcd2bda90923a4de7f337175e97274b0",
-    "url": "/mywebsite/static/media/tedx.dcd2bda9.png"
-  },
-  {
-    "revision": "a77f13152bdef53b8156cbe8224ea1e9",
-    "url": "/mywebsite/static/media/tob.a77f1315.png"
-  },
-  {
-    "revision": "7ef643256c4e2923d603afec58538dba",
-    "url": "/mywebsite/static/media/ttt.7ef64325.png"
   },
   {
     "revision": "631512bada734692a76734e673ef2317",
