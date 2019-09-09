@@ -141,9 +141,9 @@ class Resume extends Component {
         return uniqueSkills
     }
 
-    openUrl = (url) => {
-        window.open(url, "_blank")
-    }
+    // openUrl = (url) => {
+    //     window.open(url, "_blank")
+    // }
 
     render() {
 
@@ -222,7 +222,7 @@ class Resume extends Component {
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={headingFont}><b>Bachelor of Technology, Computer Science and Engineering</b></h4>
-                                        <span style={sentenceFont} className="resume-heading" onClick={() => this.openUrl("https://manipal.edu/mit.html")}>Manipal Institute of Technology, Manipal</span>
+                                        <span style={sentenceFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://manipal.edu/mit.html">Manipal Institute of Technology, Manipal</a></span>
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
@@ -240,7 +240,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://hpe.com/"><img src={hpe} style={{ height: "auto", width: "80%" }} alt="Hewlett Packard Enterprise" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://hpe.com/")}><b>Hewlett Packard Enterprise - R&D Engineer</b></h4>
+                                        <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - R&D Engineer</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
                                             <li style={sentenceFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
@@ -259,7 +259,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://hpe.com/"><img src={hpe} style={{ height: "auto", width: "80%" }} alt="Hewlett Packard Enterprise" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://hpe.com/")}><b>Hewlett Packard Enterprise - R&D Intern</b></h4>
+                                        <h4 style={headingFont} className="resume-heading"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - R&D Engineer</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
                                             <li style={sentenceFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
@@ -278,7 +278,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.hs-emden-leer.de/"><img src={emden} style={{ height: "auto", width: "80%" }} alt="Hochschule Emden/Leer" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://www.hs-emden-leer.de/")}><b>Hochschule Emden/Leer - Summer Research Intern</b></h4>
+                                        <h4 style={headingFont} className="resume-heading"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.hs-emden-leer.de/"><b>Hochschule Emden/Leer - Summer Research Intern</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
                                             <li style={sentenceFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
@@ -299,7 +299,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.tripoffbeat.com/"><img src={tob} style={{ height: "auto", width: "80%" }} alt="TripOffbeat" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://www.tripoffbeat.com/")}><b>TripOffbeat - Software development Intern</b></h4>
+                                        <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.tripoffbeat.com/"><b>TripOffbeat - Software development Intern</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Developed an Android application to assist the sales team to serve clients</li>
                                             <li style={sentenceFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
@@ -320,7 +320,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/TEDxManipal19/"><img src={tedx} style={{ height: "auto", width: "80%" }} alt="TEDxManipal" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://www.facebook.com/TEDxManipal19/")}><b>TEDxManipal - Founder and Head Organiser</b></h4>
+                                        <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.facebook.com/TEDxManipal19/"><b>TEDxManipal - Founder and Head Organiser</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Founded TEDxManipal (formerly known as TEDxManipalUniversity) in my first year under the license of TED Global, New York</li>
                                             <li style={sentenceFont}>Responsible for the leading and organising a local TEDx conference in 2017 and 2018</li>
@@ -340,7 +340,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/TheThinkTankMIT/"><img src={ttt} style={{ height: "auto", width: "80%" }} alt="The Think Tank" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" onClick={() => this.openUrl("https://www.facebook.com/TheThinkTankMIT/")}><b>The Think Tank - Founder and President</b></h4>
+                                        <h4 style={headingFont} className="resume-heading"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.facebook.com/TheThinkTankMIT/"><b>The Think Tank - Founder and President</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Founded The Think Tank, a student club, in my first year to try and promote out-of-the-box-thinking amongst the students of my university</li>
                                             <li style={sentenceFont}>Responsible for the leading and organising two fireside chats with Rakesh Sharma (The first Indian to go to space) and Dilip Chhabria (An Indian car designer) respectively for a crowd of 400+ students and faculty</li>
@@ -388,10 +388,10 @@ class Resume extends Component {
                                         <b>CSE 4111</b><span style={courseListStyle}>: Distributed and cloud computing</span>
                                     </p>
                                     <p style={headingFont}>
-                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/specialization/certificate/Y9ELV3DLZV5L")}><b>Coursera</b><span style={courseListStyle}>: Deep Learning specialization</span></span>
-                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/specialization/certificate/QFY7X3FPRM5P")}><b>Coursera</b><span style={courseListStyle}>: Python for everybody specialization</span></span>
-                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/certificate/VH92QELLCVNK")}><b>Coursera</b><span style={courseListStyle}>: Front-end development with React</span></span>
-                                        <span className="course" onClick={() => this.openUrl("https://www.coursera.org/account/accomplishments/certificate/YLAVGVFZ384W")}><b>Coursera</b><span style={courseListStyle}>: Machine Learning</span></span>
+                                        <span className="course"><a target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }} href="https://www.coursera.org/account/accomplishments/specialization/certificate/Y9ELV3DLZV5L"><b>Coursera</b><span style={courseListStyle}>: Deep Learning specialization</span></a></span>
+                                        <span className="course" ><a target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }} href="https://www.coursera.org/account/accomplishments/specialization/certificate/QFY7X3FPRM5P"><b>Coursera</b><span style={courseListStyle}>: Python for everybody specialization</span></a></span>
+                                        <span className="course" ><a target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }} href="https://www.coursera.org/account/accomplishments/certificate/VH92QELLCVNK"><b>Coursera</b><span style={courseListStyle}>: Front-end development with React</span></a></span>
+                                        <span className="course" ><a target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }} href="https://www.coursera.org/account/accomplishments/certificate/YLAVGVFZ384W"><b>Coursera</b><span style={courseListStyle}>: Machine Learning</span></a></span>
                                     </p>
                                 </div>
                             </CardBody>

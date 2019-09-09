@@ -31,9 +31,9 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink className="nav-link" to='/home'><span style={{fontFamily: "Raleway"}}>HOME</span></NavLink>
                             </NavItem>
-                            <NavItem style={{ marginLeft: '10px' }}>
+                            {/* <NavItem style={{ marginLeft: '10px' }}>
                                 <NavLink className="nav-link" to='/about'><span style={{fontFamily: "Raleway"}}>ABOUT</span></NavLink>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem style={{ marginLeft: '10px' }}>
                                 <NavLink className="nav-link" to='/resume'><span style={{fontFamily: "Raleway"}}>RESUME</span></NavLink>
                             </NavItem>

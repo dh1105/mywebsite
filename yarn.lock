@@ -8073,6 +8073,11 @@ react-app-polyfill@^1.0.2:
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
 
+react-card-flip@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/react-card-flip/-/react-card-flip-0.8.1.tgz#53cd036d5145a10a5c45f2419252d6b5f8e47d8e"
+  integrity sha512-iuyRAya8anf5aaR6BTCYyF4Z767WEgzkYSUfjxEG2zwQYvXHv98NtngAQRM+lqmwYLPTv/5cuCIOsZapy38x0g==
+
 react-dev-utils@^9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.3.tgz#7607455587abb84599451460eb37cef0b684131a"
@@ -8114,6 +8119,13 @@ react-dom@^16.9.0:
     prop-types "^15.6.2"
     scheduler "^0.15.0"
 
+react-easy-swipe@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/react-easy-swipe/-/react-easy-swipe-0.0.16.tgz#5a3d949a8f975d05be92a818254315d1318a81ea"
+  integrity sha1-Wj2Umo+XXQW+kqgYJUMV0TGKgeo=
+  dependencies:
+    prop-types "^15.5.8"
+
 react-error-overlay@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.1.tgz#b8d3cf9bb991c02883225c48044cb3ee20413e0f"
@@ -8125,6 +8137,11 @@ react-event-timeline@^1.6.3:
   integrity sha512-hMGhC9/Xx3sPF/TSlMCA13hZm/2c5CvBxbkDM7bQ4yq6VJ6AmhjqKPnU6/3nVmWUGpK3YqhHb95OiqulxVD3Eg==
   dependencies:
     prop-types "^15.6.0"
+
+react-flippy@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-flippy/-/react-flippy-0.1.5.tgz#ba097fbd671ef315e7726dc26ea918e0b19be343"
+  integrity sha512-y0q9l33YQmASGY7ojcrlY0BzVsCYgThFjXjNL+4C19ws5vEpdKH+PyG5v9ZbLXq2kGArDO921FT7fhFSAX2SMQ==
 
 react-icons@^3.7.0:
   version "3.7.0"
@@ -8188,6 +8205,15 @@ react-redux@5.0.7:
     lodash-es "^4.17.5"
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
+
+react-responsive-carousel@^3.1.50:
+  version "3.1.50"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.50.tgz#e5255f7760f3b4766efa5cd04361c74df4311960"
+  integrity sha512-f0Il76ykXn/4m49KwYlKanhWf5R5DkgZIIExI+rV8fEgSarOdUpIvS09hi13fgBcqpjzHmBnXazLtmzeQPSZYw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-easy-swipe "^0.0.16"
 
 react-router-dom@4.2.2:
   version "4.2.2"

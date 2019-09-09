@@ -98,7 +98,7 @@
 }
 
 .footer-email:hover {
-  color: #57a0d3;
+  color: #57a0d3 !important;
 }
 
 .contact {
@@ -107,7 +107,7 @@
 }
 
 .contact:hover {
-  color: #57a0d3;
+  color: #57a0d3 !important;
 }
 
 .resume-heading {
