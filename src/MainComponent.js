@@ -18,15 +18,15 @@ class Main extends Component {
                         <UncontrolledAlert color={alert.type}>{alert.message}</UncontrolledAlert>
                     }
                 </div> */}
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <BrowserRouter>
                     <Router history={history}>
                         <Switch>
-                            <Route path="/home" component={Home} />
+                            <Route path={process.env.PUBLIC_URL + "/home"} component={Home} />
                             {/* <Route path="/about" component={AboutMe} /> */}
-                            <Route path="/resume" component={Resume} />
-                            <Route path="/projects" component={Projects} />
-                            <Route path="/contact" component={Contact} />
-                            <Redirect to="/home" />
+                            <Route path={process.env.PUBLIC_URL + "/resume"} component={Resume} />
+                            <Route path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
+                            <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
+                            <Redirect to={process.env.PUBLIC_URL + "/home"} />
                         </Switch>
                     </Router>
                 </BrowserRouter>
