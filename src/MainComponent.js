@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Router, Switch, Route, Redirect, HashRouter } from 'react-router-dom';
 import { history } from './_helpers';
 import Home from './Home/HomeComponent'
 // import AboutMe from './AboutMe/AboutMeComponent'
@@ -12,12 +12,7 @@ class Main extends Component {
     render() {
         // const { alert } = this.props;
         return (
-            <div>
-                {/* <div className="container">
-                    {alert.message &&
-                        <UncontrolledAlert color={alert.type}>{alert.message}</UncontrolledAlert>
-                    }
-                </div> */}
+            <HashRouter basename="/">
                 <Router history={history}>
                     <Switch>
                         <Route path="/home" component={Home} />
@@ -28,7 +23,7 @@ class Main extends Component {
                         <Redirect to="/home" />
                     </Switch>
                 </Router>
-            </div>
+            </HashRouter>
         );
     }
 }
