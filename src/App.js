@@ -2,7 +2,6 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Main from './MainComponent'
-import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
@@ -22,11 +21,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Main />
       </div>
-    </BrowserRouter>
   );
 }
 
