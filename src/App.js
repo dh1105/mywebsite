@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Main from './MainComponent'
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
@@ -21,9 +22,11 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <HashRouter basename="/">
       <div>
         <Main />
       </div>
+    </HashRouter>
   );
 }
 
