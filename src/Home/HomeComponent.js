@@ -8,51 +8,8 @@ import { FaHiking, FaMusic, FaCamera, FaUtensils, FaRunning } from 'react-icons/
 import { GiTennisRacket } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 import CardFlip from './CardFlipComponent';
-
-// const FlippyStyle = {
-//     width: '100%',
-//     height: '100%',
-//     textAlign: 'center',
-//     fontFamily: "Raleway",
-//     fontSize: '100%',
-//     justifyContent: 'center',
-//     color: '#FFF'
-// }
-
-// const FlippyOnHover = ({ flipDirection, icon, text, backText }) => (
-//     <Flippy
-//         flipOnHover={true}
-//         flipDirection={flipDirection}
-//         style={FlippyStyle}
-//     >
-//         <FrontSide style={{
-//             backgroundColor: '#57a0d3',
-//             display: 'flex',
-//             alignItems: 'center',
-//             flexDirection: 'column',
-//             justifyContent: 'center',
-//             borderRadius: '5px'
-//         }}>
-//             <div style={{ height: '100%', width: '100%', marginTop: '20px' }}>
-//                 {icon}
-//             </div>
-//             <div>
-//                 <p>{text}</p>
-//             </div>
-//         </FrontSide>
-//         <BackSide style={{
-//             backgroundColor: '#57a0d3',
-//             display: 'flex',
-//             alignItems: 'center',
-//             justifyContent: 'center',
-//             borderRadius: '5px'
-//         }}>
-//             <div>
-//                 {backText}
-//             </div>
-//         </BackSide>
-//     </Flippy>
-// );
+import myimage from '../assets/myimage.jpg'
+import FactsCard from './FactsCardComponent';
 
 
 class Home extends Component {
@@ -77,41 +34,92 @@ class Home extends Component {
                             <CardBody className="App">
                                 <h1 style={{ marginTop: '10px', marginBottom: '20px', fontFamily: "Raleway", fontWeight: "400" }}><b>Dhruv Verma</b></h1>
                                 <hr />
-                                <p style={{ fontFamily: "Source Sans Pro" }}>
-                                    Please feel free to check out my <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/resume">resume</Link>, the <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/projects">projects</Link> I have done or you could <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/contact">contact me</Link>.
+                                <div style={{ marginBottom: '30px' }}>
+                                    <h4 style={{ marginTop: '20px', fontFamily: "Raleway", fontWeight: "400", marginBottom: '10px' }}>About me</h4>
+                                    <Row>
+                                        <Col sm="auto" md="auto" lg="auto" style={{ marginBottom: '15px' }}>
+                                            <div>
+                                                <img src={myimage} alt="Dhruv Verma" style={{ height: '150px', width: '150px', WebkitBorderRadius: '50%', boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }} />
+                                            </div>
+                                        </Col>
+                                        <Col>
+                                            <p style={{ fontFamily: "Source Sans Pro", textAlign: 'left' }}>
+                                                I am a Computer Science undergraduate major from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
+                                        <b>web development</b> across the full-stack using Reactjs and Flask and even <b>deep learning</b> using CNNs and LSTMs. I love to develop
+                                                                                        innovative solutions using my skillset to problems I have faced in my daily life or have seen people close to me face. My academic research
+                                        interests lie in the application of deep learning to develop assistive technologies in the realms of <b>computer vision</b> and <b>NLP</b>. I am currently working
+                                        as a <b>Research and Development Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
                                 </p>
-                                <Row style={{ justifyContent: 'center' }}>
-                                    <Col xs="8" sm="6" md="3" lg="2" >
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<FaHiking size={50} style={{ color: '#fff' }} />} text="Hiking" backText="In the Himalayas" />
-                                        </div>
-                                    </Col>
-                                    <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<FaMusic size={50} style={{ color: '#fff' }} />} text="Playing music" backText="On the guitar" />
-                                        </div>
-                                    </Col>
-                                    <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<FaCamera size={50} style={{ color: '#fff' }} />} text="Photography" backText="Of landscapes and the night sky" />
-                                        </div>
-                                    </Col>
-                                    <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<GiTennisRacket size={50} style={{ color: '#fff' }} />} text="Squash" backText="Alone or with a partner" />
-                                        </div>
-                                    </Col>
-                                    <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<FaUtensils size={50} style={{ color: '#fff' }} />} text="Cooking" backText="Indian and Italian food" />
-                                        </div>
-                                    </Col>
-                                    <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
-                                        <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
-                                            <CardFlip icon={<FaRunning size={50} style={{ color: '#fff' }} />} text="Running" backText="On a pleasant day" />
-                                        </div>
-                                    </Col>
-                                </Row>
+                                        </Col>
+                                    </Row>
+                                    <p style={{ fontFamily: "Source Sans Pro" }}>
+                                        Please feel free to check out my <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/resume">resume</Link>, the <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/projects">projects</Link> I have done or you could <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/contact">contact me</Link>.
+                                </p>
+                                </div>
+                                <hr />
+                                <div style={{ marginBottom: '30px' }}>
+                                    <h4 style={{ marginTop: '20px', fontFamily: "Raleway", fontWeight: "400", marginBottom: '30px' }}>Some interesting facts about me</h4>
+                                    <Row style={{ marginBottom: '20px' }}>
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard />
+                                        </Col>
+                                        <Col xs="12" sm="6" md="6" lg="6">
+                                            <FactsCard />
+                                        </Col>
+                                    </Row>
+                                    <Row style={{ marginBottom: '20px' }}>
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard />
+                                        </Col>
+                                        <Col xs="12" sm="6" md="6" lg="6">
+                                            <FactsCard />
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard />
+                                        </Col>
+                                        <Col xs="12" sm="6" md="6" lg="6">
+                                            <FactsCard />
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <hr />
+                                <div>
+                                    <h4 style={{ marginTop: '10px', fontFamily: "Raleway", fontWeight: "400" }}>My hobbies</h4>
+                                    <Row style={{ justifyContent: 'center', marginTop: '20px' }}>
+                                        <Col xs="8" sm="6" md="3" lg="2" >
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<FaHiking size={50} style={{ color: '#fff' }} />} text="Hiking" backText="In the Himalayas" />
+                                            </div>
+                                        </Col>
+                                        <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<FaMusic size={50} style={{ color: '#fff' }} />} text="Playing music" backText="On the guitar" />
+                                            </div>
+                                        </Col>
+                                        <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<FaCamera size={50} style={{ color: '#fff' }} />} text="Photography" backText="Of landscapes and the night sky" />
+                                            </div>
+                                        </Col>
+                                        <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<GiTennisRacket size={50} style={{ color: '#fff' }} />} text="Squash" backText="Alone or with a partner" />
+                                            </div>
+                                        </Col>
+                                        <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<FaUtensils size={50} style={{ color: '#fff' }} />} text="Cooking" backText="Indian and Italian food" />
+                                            </div>
+                                        </Col>
+                                        <Col xs="8" sm="6" md="3" lg="2" style={{ marginBottom: '15px', justifyContent: 'center' }}>
+                                            <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center' }}>
+                                                <CardFlip icon={<FaRunning size={50} style={{ color: '#fff' }} />} text="Running" backText="On a pleasant day" />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
                                 <p style={{ fontFamily: "Source Sans Pro", marginTop: '20px' }}>The source code for this website can be found <a target="_blank" rel="noopener noreferrer" className="contact" style={{ color: "inherit" }} href="https://github.com/dh1105/mywebsite">here</a></p>
                             </CardBody>
                         </Card>

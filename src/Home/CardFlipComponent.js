@@ -53,6 +53,7 @@ class CardFlip extends Component {
                         height: '100%',
                         border: 'none',
                         fontSize: '85%',
+                        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
                     }} onMouseEnter={this.flipBack}>
                     {/* This is the front of the card.
               <button onClick={this.handleClick}>Click to flip</button> */}
@@ -70,7 +71,8 @@ class CardFlip extends Component {
                     width: '100%',
                     height: '100%',
                     border: 'none',
-                    fontSize: '100%'
+                    fontSize: '100%',
+                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
                 }} onMouseLeave={this.flipForward}>
                     <CardBody style={{ height: '100%', width: '100%' }}>
                         {this.props.backText}
