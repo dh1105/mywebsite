@@ -10,7 +10,35 @@ import { Link } from 'react-router-dom'
 import CardFlip from './CardFlipComponent';
 import myimage from '../assets/myimage.jpg'
 import FactsCard from './FactsCardComponent';
+import natgeo from '../assets/natgeo.jpg'
+import mun from '../assets/mun.png';
+import trek from '../assets/trek.png';
+import plane from '../assets/plane.jpg'
 
+const facts = {
+    natgeo: {
+        img: <img src={natgeo} style={{ width: '70%', height: 'auto', marginTop: '10px' }} alt="National Geographic Traveller India" />,
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>My pictures have been featured mulitple times in the National
+        Geographic Traveller India magazine. One was printed as part of an issue, another was part of a photo story on their website
+        and the three more have won a monthly photography contest!</span>
+    },
+    mun: {
+        img: <img src={mun} style={{ width: '55%', height: 'auto' }} alt="Model UN" />,
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>I have taken part in over 20 Model UN conferences in India. Out of these, I have
+        awards in 13 and have been part of the executive board for a committee in 5.</span>
+    },
+    trek: {
+        img: <img src={trek} style={{ width: '70%', height: 'auto', marginTop: '10px' }} alt="Trekking" />,
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>I have completed two high altitute treks in the Himalayas. The first being Roopkund lake
+        at 16,470 ft above sea level and the second being Kuari Pass at 12,516 ft above sea level.</span>
+    },
+    aviation: {
+        img: <img src={plane} style={{ width: '50%', height: 'auto', marginTop: '10px' }} alt="Plane" />,
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>I am a huge aviation enthusiast. Whenever I travel, I always try to
+        sit on a new aircraft. I mastered the game - Microsoft Flight Simulator -  in grade 5 and can easily fly a plane on it. So if by chance you are
+        in a flight which needs a pilot, I actually might be of help!</span>
+    }
+}
 
 class Home extends Component {
 
@@ -35,18 +63,21 @@ class Home extends Component {
                                 <h1 style={{ marginTop: '10px', marginBottom: '20px', fontFamily: "Raleway", fontWeight: "400" }}><b>Dhruv Verma</b></h1>
                                 <hr />
                                 <div style={{ marginBottom: '30px' }}>
-                                    <h4 style={{ marginTop: '20px', fontFamily: "Raleway", fontWeight: "400", marginBottom: '10px' }}>About me</h4>
+                                    <h4 style={{ marginTop: '20px', fontFamily: "Raleway", fontWeight: "400", marginBottom: '20px' }}>About me</h4>
                                     <Row>
-                                        <Col sm="auto" md="auto" lg="auto" style={{ marginBottom: '15px' }}>
+                                        {/* <Col sm="auto" md="auto" lg="auto" style={{ marginBottom: '15px' }}>
                                             <div>
-                                                <img src={myimage} alt="Dhruv Verma" style={{ height: '150px', width: '150px', WebkitBorderRadius: '50%', boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }} />
+                                                <img src={myimage} alt="Dhruv Verma" style={{ height: '150px', width: '150px', WebkitBorderRadius: '50%' }} />
                                             </div>
-                                        </Col>
+                                        </Col> */}
                                         <Col>
-                                            <p style={{ fontFamily: "Source Sans Pro", textAlign: 'left' }}>
+                                            <div style={{ marginBottom: '20px' }}>
+                                                <img src={myimage} alt="Dhruv Verma" style={{ height: '150px', width: '150px', WebkitBorderRadius: '50%' }} />
+                                            </div>
+                                            <p style={{ fontFamily: "Source Sans Pro" }}>
                                                 I am a Computer Science undergraduate major from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
                                         <b>web development</b> across the full-stack using Reactjs and Flask and even <b>deep learning</b> using CNNs and LSTMs. I love to develop
-                                                                                        innovative solutions using my skillset to problems I have faced in my daily life or have seen people close to me face. My academic research
+                                                                                                                        innovative solutions using my skillset to problems I have faced in my daily life or have seen people close to me face. My academic research
                                         interests lie in the application of deep learning to develop assistive technologies in the realms of <b>computer vision</b> and <b>NLP</b>. I am currently working
                                         as a <b>Research and Development Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
                                 </p>
@@ -56,35 +87,33 @@ class Home extends Component {
                                         Please feel free to check out my <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/resume">resume</Link>, the <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/projects">projects</Link> I have done or you could <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/contact">contact me</Link>.
                                 </p>
                                 </div>
-                                <hr />
                                 <div style={{ marginBottom: '30px' }}>
                                     <h4 style={{ marginTop: '20px', fontFamily: "Raleway", fontWeight: "400", marginBottom: '30px' }}>Some interesting facts about me</h4>
-                                    <Row style={{ marginBottom: '20px' }}>
+                                    <Row >
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard icon={facts.natgeo.img} fact={facts.natgeo.fact} />
+                                        </Col>
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard icon={facts.mun.img} fact={facts.mun.fact} />
+                                        </Col>
+                                    </Row>
+                                    <Row >
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard icon={facts.trek.img} fact={facts.trek.fact} />
+                                        </Col>
+                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+                                            <FactsCard icon={facts.aviation.img} fact={facts.aviation.fact} />
+                                        </Col>
+                                    </Row>
+                                    {/* <Row>
                                         <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
                                             <FactsCard />
                                         </Col>
-                                        <Col xs="12" sm="6" md="6" lg="6">
-                                            <FactsCard />
-                                        </Col>
-                                    </Row>
-                                    <Row style={{ marginBottom: '20px' }}>
                                         <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
                                             <FactsCard />
                                         </Col>
-                                        <Col xs="12" sm="6" md="6" lg="6">
-                                            <FactsCard />
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col xs="12" sm="6" md="6" lg="6" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
-                                            <FactsCard />
-                                        </Col>
-                                        <Col xs="12" sm="6" md="6" lg="6">
-                                            <FactsCard />
-                                        </Col>
-                                    </Row>
+                                    </Row> */}
                                 </div>
-                                <hr />
                                 <div>
                                     <h4 style={{ marginTop: '10px', fontFamily: "Raleway", fontWeight: "400" }}>My hobbies</h4>
                                     <Row style={{ justifyContent: 'center', marginTop: '20px' }}>

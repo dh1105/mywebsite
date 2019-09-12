@@ -5,10 +5,14 @@ class FactsCard extends Component {
 
     render() {
         return (
-            <Card style={{ width: '80%' }}>
+            <Card style={{ width: '80%', height: 'auto' }}>
                 <CardBody>
-                    {this.props.icon}
-                    {this.props.fact}
+                    <div>
+                        {this.props.icon}
+                    </div>
+                    <div style={{marginTop: '30px'}}>
+                        {this.props.fact}
+                    </div>
                 </CardBody>
             </Card>
         )
