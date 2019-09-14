@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec1723847816ddf1d62b560ab55b0b21",
+    "revision": "d48d0db2157d1620da1c679a1ca6ed66",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.19d76ff4.chunk.css"
   },
   {
-    "revision": "284db555c36095b5ecf5",
+    "revision": "1a8af6a66ef373d4b218",
     "url": "/static/css/main.6c6918aa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ab9927f2.chunk.js"
   },
   {
-    "revision": "284db555c36095b5ecf5",
-    "url": "/static/js/main.2a5c138f.chunk.js"
+    "revision": "1a8af6a66ef373d4b218",
+    "url": "/static/js/main.64fd7012.chunk.js"
   },
   {
     "revision": "4f7b506d25ad0a6c8283",
@@ -28,24 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alexa.4735bb84.jpg"
   },
   {
-    "revision": "348b8ee6f46403be25ab63a5691d7f6e",
-    "url": "/static/media/catvdogs.348b8ee6.jpg"
+    "revision": "2574c812543ef08658c254144ead7f95",
+    "url": "/static/media/catvdogs.2574c812.jpg"
   },
   {
-    "revision": "fbca4861510fbc1306b8aa3547d084aa",
-    "url": "/static/media/chat.fbca4861.jpg"
+    "revision": "85f31a514d6fe177101b0ce008f198da",
+    "url": "/static/media/chat.85f31a51.jpg"
   },
   {
-    "revision": "567496127084e388f88b84cfe00fa3db",
-    "url": "/static/media/mergesort.56749612.png"
+    "revision": "305d3f04b48a4de2c569fb11c72bbe3b",
+    "url": "/static/media/mergesort.305d3f04.png"
   },
   {
     "revision": "a411f536e0637630196c28d5d530a659",
     "url": "/static/media/mun.a411f536.png"
   },
   {
-    "revision": "894e2d1047cd691b10d273c4be86dc53",
-    "url": "/static/media/myimage.894e2d10.jpg"
+    "revision": "56fb7b144e75478613118eb7d79f085b",
+    "url": "/static/media/myimage.56fb7b14.jpg"
   },
   {
     "revision": "1a08402037a82618df0fae65fc6a2f8a",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/nstsnowy.7a67a6e5.jpg"
   },
   {
-    "revision": "e0049aee9a1104ec752e322941ac72cc",
-    "url": "/static/media/pan.e0049aee.jpg"
+    "revision": "5a3b0f44f6339138b398989aa7e97c21",
+    "url": "/static/media/pan.5a3b0f44.jpg"
   },
   {
     "revision": "4a9f0c19332aaef9be5ff81a4f40a1c3",
@@ -72,11 +72,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/trek.d34ba243.png"
   },
   {
-    "revision": "631512bada734692a76734e673ef2317",
-    "url": "/static/media/word2vec.631512ba.png"
+    "revision": "2259b4e226231ca619350a49ab606199",
+    "url": "/static/media/word2vec.2259b4e2.png"
   },
   {
-    "revision": "e60cd3578e56300ef5412658788abd25",
-    "url": "/static/media/yolov2.e60cd357.jpg"
+    "revision": "98efae915b28ac75b481786f2c85f3c3",
+    "url": "/static/media/yolov2.98efae91.jpg"
   }
 ]);
