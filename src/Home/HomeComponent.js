@@ -84,7 +84,7 @@ class Home extends Component {
                                         </Col>
                                     </Row>
                                     <p style={{ fontFamily: "Source Sans Pro" }}>
-                                        Please feel free to check out my <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/resume">resume</Link>, the <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/projects">projects</Link> I have done or you could <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/contact">contact me</Link>.
+                                        Please feel free to check out my <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/resume"><u>resume</u></Link>, the <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/projects"><u>projects</u></Link> I have done or you could <Link className="contact" style={{ fontFamily: "Source Sans Pro", color: "inherit" }} to="/contact"><u>contact me</u></Link>.
                                 </p>
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
@@ -149,7 +149,7 @@ class Home extends Component {
                                         </Col>
                                     </Row>
                                 </div>
-                                <p style={{ fontFamily: "Source Sans Pro", marginTop: '20px' }}>The source code for this website can be found <a target="_blank" rel="noopener noreferrer" className="contact" style={{ color: "inherit" }} href="https://github.com/dh1105/mywebsite">here</a></p>
+                                <p style={{ fontFamily: "Source Sans Pro", marginTop: '20px' }}>The source code for this website can be found <a target="_blank" rel="noopener noreferrer" className="contact" style={{ color: "inherit" }} href="https://github.com/dh1105/mywebsite"><u>here</u></a></p>
                             </CardBody>
                         </Card>
                     </div>

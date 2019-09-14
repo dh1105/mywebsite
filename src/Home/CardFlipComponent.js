@@ -45,7 +45,7 @@ class CardFlip extends Component {
             <ReactCardFlip containerStyle={FlippyStyle} isFlipped={this.state.isFlipped} flipDirection="horizontal">
                 <Card key="front"
                     style={{
-                        backgroundColor: '#57a0d3',
+                        backgroundColor: '#4478A6',
                         alignItems: 'center',
                         justifyContent: 'center',
                         borderRadius: '5px',
@@ -64,7 +64,7 @@ class CardFlip extends Component {
                 </Card>
 
                 <Card key="back" style={{
-                    backgroundColor: '#57a0d3',
+                    backgroundColor: '#4478A6',
                     borderRadius: '5px',
                     alignItems: 'center',
                     justifyContent: 'center',

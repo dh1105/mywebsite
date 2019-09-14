@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0C1226;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #4478A6;
 }
 
 @keyframes App-logo-spin {
@@ -45,7 +45,7 @@
 }
 
 .footer{
-  background-color: #393f4d;
+  background-color: #0C1226;
   margin:0px auto;
   padding: 20px 0px 20px 0px;
 }
@@ -98,7 +98,7 @@
 }
 
 .footer-email:hover {
-  color: #57a0d3 !important;
+  color: #4478A6 !important;
 }
 
 .contact {
@@ -107,7 +107,7 @@
 }
 
 .contact:hover {
-  color: #57a0d3 !important;
+  color: #4478A6 !important;
 }
 
 .resume-heading {
@@ -119,7 +119,7 @@
 }
 
 .resume-heading:hover{
-  color: #57a0d3
+  color: #4478A6
 }
 
 .course {
@@ -127,5 +127,12 @@
 }
 
 .course:hover{
-  color: #57a0d3
+  color: #4478A6
+}
+
+.dashed {
+  background-image: linear-gradient(to right, blue 75%, transparent 75%);
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 3px;
 }
