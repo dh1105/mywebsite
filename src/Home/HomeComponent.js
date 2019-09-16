@@ -18,7 +18,7 @@ import plane from '../assets/plane.jpg'
 const facts = {
     natgeo: {
         img: <img src={natgeo} style={{ width: '70%', height: 'auto', marginTop: '10px' }} alt="National Geographic Traveller India" />,
-        fact: <span style={{ fontFamily: "Source Sans Pro" }}>My pictures have been featured mulitple times in the National
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>My pictures have been featured multiple times in the National
         Geographic Traveller India magazine. One was printed as part of an issue, another was part of a photo story on their website
         and the three more have won a monthly photography contest!</span>
     },
@@ -76,7 +76,7 @@ class Home extends Component {
                                             </div>
                                             <p style={{ fontFamily: "Source Sans Pro" }}>
                                                 I am a Computer Science undergraduate major from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
-                                        <b>web development</b> across the full-stack using Reactjs and Flask and even <b>deep learning</b> using CNNs and LSTMs. I love to develop
+                                        <b> web development</b> across the full-stack using Reactjs and Flask and <b>deep learning</b> using CNNs and LSTMs. I love to develop
                                                                                                                         innovative solutions using my skillset to problems I have faced in my daily life or have seen people close to me face. My academic research
                                         interests lie in the application of deep learning to develop assistive technologies in the realms of <b>computer vision</b> and <b>NLP</b>. I am currently working
                                         as a <b>Research and Development Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
