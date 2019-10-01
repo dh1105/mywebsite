@@ -261,8 +261,8 @@ class Resume extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={headingFont} className="resume-heading"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - R&D Engineer</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                            <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualize and track test suite execution for all Nimble products</li>
-                                            <li style={sentenceFont}>Containerised the website for hosting using Docker into 3 containers - NGINX web server, uwsgi-nginx-flask web server and MySQL server</li>
+                                            <li style={sentenceFont}>Worked in the Nimble Storage Team to develop a web dashboard using Flask, Reactjs and MySQL to visualise and track test suite execution for all Nimble products</li>
+                                            <li style={sentenceFont}>Containerised the website for hosting using Docker into three containers - NGINX web server, uwsgi-Nginx-flask web server and MySQL server</li>
                                         </ul>
                                     </Col>
                                 </Row>
@@ -280,7 +280,7 @@ class Resume extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={headingFont} className="resume-heading"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.hs-emden-leer.de/"><b>Hochschule Emden/Leer - Summer Research Intern</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                            <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrainted Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
+                                            <li style={sentenceFont}>Worked with Professor Juho Mäkiö under a DAAD grant to research on the viability of the Constrained Application Protocol (CoAP) in the use of IoT networks with low power nodes</li>
                                             <li style={sentenceFont}>Coded device drivers in C for the INA219 sensor to read node current and voltage readings and MAX17043 sensor to get battery readings</li>
                                             <li style={sentenceFont}>Developed a python CoAP web-server using CoAPthon to service and store incoming sensor readings from remote nodes</li>
                                             <li style={sentenceFont}>Contributed to the open-source RIOT operating system repo by adding support for the drivers mentioned above</li>
@@ -301,10 +301,10 @@ class Resume extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.tripoffbeat.com/"><b>TripOffbeat - Software development Intern</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                            <li style={sentenceFont}>Developed an Android application to assist the sales team to serve clients</li>
+                                            <li style={sentenceFont}>Developed an Android application to assist the sales team in serving clients</li>
                                             <li style={sentenceFont}>Increased the overall efficiency of the sales team by allowing quicker access to resort information and also automated receipt generation</li>
                                             <li style={sentenceFont}>Got introduced to the REST framework and developed API's in PHP for the app to fetch data from the database</li>
-                                            <li style={sentenceFont}>Modified the MySQL database by introducing tables to allow authentication</li>
+                                            <li style={sentenceFont}>Modified the MySQL database by adding tables to allow authentication</li>
                                         </ul>
                                     </Col>
                                 </Row>

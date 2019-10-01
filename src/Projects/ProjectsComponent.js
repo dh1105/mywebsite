@@ -34,7 +34,7 @@ class Projects extends Component {
                         {/* <Card style={{ width: '100%', marginTop: '100px', marginBottom: '30px' }}>
                             <CardBody> */}
                         <h2 style={{ marginTop: '100px', marginBottom: '20px', fontFamily: "Raleway" }}><b>Projects</b></h2>
-                        <p style={{ fontFamily: "Raleway", fontWeight: "300" }}>A selection of some of my projects</p>
+                        <p style={{ fontFamily: "Raleway" }}>A selection of some of my projects</p>
                         <hr />
                         <VerticalTimeline>
                             <VerticalTimelineElement
@@ -51,8 +51,8 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Semantic similarity between short paragraphs</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Currently working under Professor Muralikrishna SN to develop an algorithm to detect similarity between two small paragraphs, consisting of multiple sentences, by extending the MaLSTM approach
-                                                to detect sentence similarity.
+                                            I am currently working under Professor Muralikrishna SN to develop an algorithm to detect similarity between two small paragraphs consisting of multiple sentences.
+                                            We are implementing this by extending an existing approach to detect single-sentence similarity using two LSTMs in a Siamese architecture.
                                         </p>
                                     </Col>
                                 </Row>
@@ -91,8 +91,9 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Trigger word detection</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Developed a deep learning model to detect a spoken trigger word. Implemeted the model using a 1 convolutional layer and 2 GRU layers.
-                                           </p>
+
+                                            I have developed a deep learning model to detect a spoken trigger word. I implemented the model using 1 convolutional layer and 2 GRU layers.
+                                            </p>
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
@@ -129,7 +130,7 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Sign Language detection</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Worked on making a CNN to detect sign language alphabets in a given image.
+                                            I have worked on making a CNN to detect sign language alphabets in a given image.
                                     </p>
                                     </Col>
                                 </Row>
@@ -148,8 +149,8 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Anomaly detection in a panoramic mouth X-ray</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Worked under Dr. Srikanth Prabhu to develop a CNN to classify a dental x-ray as either 'standard' or 'anomalous' based on the number of teeth in
-                                            the mouth and their position.
+                                            I have worked under Dr Srikanth Prabhu to develop a CNN to classify a dental x-ray as either 'standard' or 'anomalous'
+                                            based on the number of teeth in the mouth and their position.
                                         </p>
                                     </Col>
                                 </Row>
@@ -187,7 +188,7 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Multithreaded merge-sort</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Implemented a mutli-threaded merge sort to demonstrate the use of multi-threading in my OS class.
+                                            I have implemented a multi-threaded merge sort to demonstrate the use of multi-threading in my OS class.
                                     </p>
                                     </Col>
                                 </Row>
@@ -206,7 +207,7 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}><b>ChatApp</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            Made an Android chat application with real time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
+                                            Made an Android chat application with real-time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
                                             </p>
                                     </Col>
                                 </Row>
