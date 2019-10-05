@@ -9094,6 +9094,11 @@ react-flippy@^0.1.5:
   resolved "https://registry.yarnpkg.com/react-flippy/-/react-flippy-0.1.5.tgz#ba097fbd671ef315e7726dc26ea918e0b19be343"
   integrity sha512-y0q9l33YQmASGY7ojcrlY0BzVsCYgThFjXjNL+4C19ws5vEpdKH+PyG5v9ZbLXq2kGArDO921FT7fhFSAX2SMQ==
 
+react-ga@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.7.0.tgz#24328f157f31e8cffbf4de74a3396536679d8d7c"
+  integrity sha512-AjC7UOZMvygrWTc2hKxTDvlMXEtbmA0IgJjmkhgmQQ3RkXrWR11xEagLGFGaNyaPnmg24oaIiaNPnEoftUhfXA==
+
 react-icons@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.7.0.tgz#64fe46231fabfeea27895edeae6c3b78114b8c8f"

@@ -16,6 +16,7 @@
     "react-dom": "^16.9.0",
     "react-event-timeline": "^1.6.3",
     "react-flippy": "^0.1.5",
+    "react-ga": "^2.7.0",
     "react-icons": "^3.7.0",
     "react-popper": "0.9.2",
     "react-redux": "5.0.7",
