@@ -16,7 +16,7 @@ import signlang from '../assets/signlang.png'
 import mergesort from '../assets/mergesort.png'
 import catvdogs from '../assets/catvdogs.jpg'
 import pinkfloyd from '../assets/pinkfloyd.jpg'
-import { FaDog, FaTooth, FaSignLanguage, FaCar, FaMicrophone, FaPaintBrush, FaAndroid, FaCode } from 'react-icons/fa'
+import { FaDog, FaTooth, FaSignLanguage, FaCar, FaMicrophone, FaPaintBrush, FaAndroid, FaCode, FaMusic } from 'react-icons/fa'
 import { MdLanguage } from 'react-icons/md'
 
 class Projects extends Component {
@@ -40,22 +40,22 @@ class Projects extends Component {
                         <VerticalTimeline>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="July 2019 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                                icon={<MdLanguage />}>
+                                date="October 2019"
+                                iconStyle={{ background: 'rgb(153, 50, 204)', color: '#fff' }}
+                                icon={<FaMusic />}>
                                 <Row>
                                     <Col style={{ textAlign: "center" }}>
-                                        <img src={pinkfloyd} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Word2Vec" />
+                                        <img src={pinkfloyd} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Pink Floyd" />
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Song lyric generator</b></h4>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Pink Floyd lyric generator</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             Using an LSTM, I generated lyrics for potential songs by one of my favourite bands - Pink Floyd. The dataset was made by scraping song lyrics off the internet and pre-prosessing the lyrics in sequence windows of 51 words each. 
                                             This resulted in an n-gram model which would look at an input sequence and predict the next word. This helped overcome the problem of data scarcity 
-                                            and helped generate texts at a word level rather than character level. After 100 epochs of training, this is output I got.<br/>
-                                            The seed text: ticking away the moments that make up a dull day you fritter and waste the hours in an offhand way<br/>
+                                            and helped generate texts at a word level rather than character level. After 100 epochs of training, this is output I got.<br/><br/>
+                                            The seed text: ticking away the moments that make up a dull day you fritter and waste the hours in an offhand way<br/><br/>
                                             The model's output: kicking around on the storyline if kind yea did we were a holiday and all the pieces cheered on tidings turned back in derilict sidings the poppies entwine with cattle trucks lying in desire to caution is not the beating of your button the leaves cheat many one smiled to
                                         </p>
                                     </Col>
