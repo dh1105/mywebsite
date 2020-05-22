@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, Fa500Px, FaEnvelope } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, FaMedium, FaEnvelope } from 'react-icons/fa'
 import myimage from './assets/myimage.jpg'
 import "./Icons.css"
 
@@ -35,7 +35,7 @@ class Footer extends Component {
                                 <FaLinkedinIn size={20} className="icon" onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
                                 <FaInstagram size={20} className="icon" onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
                                 <FaFacebookF size={20} className="icon" onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
-                                <Fa500Px size={20} className="icon" onClick={() => this.openUrl("https://500px.com/dhruv2scs")} />
+                                <FaMedium size={20} className="icon" onClick={() => this.openUrl("https://medium.com/@dh1105")} />
                                 <FaEnvelope size={20} className="icon" onClick={this.onClickMail} />
                             </div>
                         </div>

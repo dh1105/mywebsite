@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
 import { Card, CardBody } from 'reactstrap';
-import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope, Fa500Px } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope, FaMedium } from 'react-icons/fa'
 import '../Icons.css'
 
 class Contact extends Component {
@@ -38,7 +38,7 @@ class Contact extends Component {
                                         <FaLinkedinIn size={20} className="contact-icon" onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
                                         <FaInstagram size={20} className="contact-icon" onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
                                         <FaFacebookF size={20} className="contact-icon" onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
-                                        <Fa500Px size={20} className="contact-icon" onClick={() => this.openUrl("https://500px.com/dhruv2scs")} />
+                                        <FaMedium size={20} className="contact-icon" onClick={() => this.openUrl("https://medium.com/@dh1105")} />
                                         <FaEnvelope size={20} className="contact-icon" onClick={this.onClickMail} />
                                     </div>
                                 </div>

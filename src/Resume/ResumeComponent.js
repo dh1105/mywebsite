@@ -26,7 +26,8 @@ var scroller = Scroll.scroller;
 const skills = {
     MachineLearning: {
         Keras: 4,
-        Tensorflow: 4,
+        Pytorch: 4,
+        Pandas: 4,
         Matlab: 3,
         Numpy: 3,
         color: "primary"
@@ -71,7 +72,8 @@ const skills = {
     Python: {
         Python: 5,
         Keras: 4,
-        Tensorflow: 4,
+        Pytorch: 4,
+        Pandas: 4,
         Flask: 4,
         Numpy: 3,
         color: ""
