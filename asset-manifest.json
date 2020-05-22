@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4192233a.chunk.css",
-    "main.js": "/static/js/main.0363700c.chunk.js",
-    "main.js.map": "/static/js/main.0363700c.chunk.js.map",
+    "main.css": "/static/css/main.dab3de7c.chunk.css",
+    "main.js": "/static/js/main.828e1dd1.chunk.js",
+    "main.js.map": "/static/js/main.828e1dd1.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.ee17c8c1.js",
     "runtime~main.js.map": "/static/js/runtime~main.ee17c8c1.js.map",
     "static/css/2.19d76ff4.chunk.css": "/static/css/2.19d76ff4.chunk.css",
-    "static/js/2.5e82aa22.chunk.js": "/static/js/2.5e82aa22.chunk.js",
-    "static/js/2.5e82aa22.chunk.js.map": "/static/js/2.5e82aa22.chunk.js.map",
+    "static/js/2.d26865ed.chunk.js": "/static/js/2.d26865ed.chunk.js",
+    "static/js/2.d26865ed.chunk.js.map": "/static/js/2.d26865ed.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fef88a115d20572f3cf9a602fb245abe.js": "/precache-manifest.fef88a115d20572f3cf9a602fb245abe.js",
+    "precache-manifest.18296e747174f84af3269cba4398457d.js": "/precache-manifest.18296e747174f84af3269cba4398457d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.19d76ff4.chunk.css.map": "/static/css/2.19d76ff4.chunk.css.map",
-    "static/css/main.4192233a.chunk.css.map": "/static/css/main.4192233a.chunk.css.map",
-    "static/media/alexa.jpg": "/static/media/alexa.4735bb84.jpg",
-    "static/media/catvdogs.jpg": "/static/media/catvdogs.2574c812.jpg",
+    "static/css/main.dab3de7c.chunk.css.map": "/static/css/main.dab3de7c.chunk.css.map",
     "static/media/chat.jpg": "/static/media/chat.85f31a51.jpg",
+    "static/media/dark.jpg": "/static/media/dark.f9bf751e.jpg",
     "static/media/mergesort.png": "/static/media/mergesort.305d3f04.png",
     "static/media/mun.png": "/static/media/mun.a411f536.png",
     "static/media/myimage.jpg": "/static/media/myimage.56fb7b14.jpg",
@@ -24,9 +23,8 @@
     "static/media/pan.jpg": "/static/media/pan.5a3b0f44.jpg",
     "static/media/pinkfloyd.jpg": "/static/media/pinkfloyd.8ce73a3a.jpg",
     "static/media/plane.jpg": "/static/media/plane.4a9f0c19.jpg",
-    "static/media/signlang.png": "/static/media/signlang.42fb9b37.png",
+    "static/media/reddit_logo.png": "/static/media/reddit_logo.7dbc3631.png",
     "static/media/trek.png": "/static/media/trek.d34ba243.png",
-    "static/media/word2vec.png": "/static/media/word2vec.2259b4e2.png",
-    "static/media/yolov2.jpg": "/static/media/yolov2.98efae91.jpg"
+    "static/media/word2vec.png": "/static/media/word2vec.2259b4e2.png"
   }
 }
