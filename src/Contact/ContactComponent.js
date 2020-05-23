@@ -31,7 +31,7 @@ class Contact extends Component {
                                 <h2 style={{marginTop: '10px', marginBottom: '20px', fontFamily: "Raleway"}}><b>Contact</b></h2>
                                 <hr />
                                 <p style={{ fontFamily: "Source Sans Pro" }}>Feel free to get in touch with me. You can email me at:<br />
-                                <span className="contact"><a style={{color: 'inherit'}} href="mailto:dhruv.verma110597@gmail.com">dhruv.verma110597@gmail.com</a></span></p>
+                                <span className="contact"><a style={{color: 'inherit'}} href="mailto:dhruv.verma110597@gmail.com"><u>dhruv.verma110597@gmail.com</u></a></span></p>
                                 <div className="row" style={{marginTop: '20px'}}>
                                     <div className="col-auto">
                                         <FaGithub size={20} className="contact-icon" onClick={() => this.openUrl("https://github.com/dh1105")} />

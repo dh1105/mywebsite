@@ -81,7 +81,11 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Multimodal deep learning to predict movie genres</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Multi-modal-movie-genre-prediction">
+                                                <b>Multimodal deep learning to predict movie genres</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
@@ -90,14 +94,14 @@ Deep Learning</b></h4>
                                                     units each unit corresponding to a genre.
                                                 </li>
                                                 <li>
-                                                    Keras was used for a baseline model which was then improved using pytorch. The final model had
-                                                    a trainable embedding layer fed with Google's word2vec embeddings. This was done due to significant amount of words
-                                                    not being in the word2vec model's vocabulary. The evaluation metrics used include accuracy, loss,
-                                                    recall, precision, f1 score, Hamming loss and ROC AUC score.
+                                                    Keras was used for a baseline model which was then improved using pytorch.
+                                                    The evaluation metrics used include accuracy, loss,
+                                                    recall, precision, f1 score, Hamming loss and ROC AUC score. An article about the
+                                                    project can be found <span className="course"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://towardsdatascience.com/multimodal-deep-learning-to-predict-movie-genres-e6855f814a8a"><u>here</u></a></span>.
                                                 </li>
                                                 <li>
                                                     Improved the ROC AUC score from 0.75 to 0.80, improved the F1 score from 0.41 to 0.50, improved the recall score
-                                                    from 0.39 to 0.57 and precision score from 0.51 to 0.52. The final testing accuracy was 0.87 with a loss of 0.34. The 
+                                                    from 0.39 to 0.57 and precision score from 0.51 to 0.52. The final testing accuracy was 0.87 with a loss of 0.34. The
                                                     Hamming loss achieved was 0.11.
                                                     </li>
                                             </ul>
@@ -117,21 +121,25 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Reddit flair classification</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Reddit-flair-classifier">
+                                                <b>Reddit flair classification</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
                                                     Built a reactjs app with a flask backend which classifies
                                                     reddit posts from r/india using logistic regression into 6 flair categories -
                                                     'Coronavirus', 'Science/Technology', 'Policy/Economy', 'Politics', 'Non-Political' and 'AskIndia'.
-                                                    The webapp can be found <span className="course"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://dh1105.github.io/Reddit-flair-classifier-frontend/#/home">here.</a></span>
+                                                    The webapp can be found <span className="course"><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://dh1105.github.io/Reddit-flair-classifier-frontend/#/home"><u>here</u></a></span>.
                                                 </li>
                                                 <li>
                                                     Four models were trained as baseline models using a combination of the 'title' and 'post body' as a feature.
                                                     The Logistic regression model performed the best out of these four with an accuracy of 0.60.
                                                 </li>
                                                 <li>
-                                                    Four LSTM model's were also trained. Each a different word embedding layer - word2vec, GLoVe, Fasttext and a trainable embedding layer.
+                                                    Four LSTM model's were also trained. Each a different word embedding layer - word2vec, GloVe, Fasttext and a trainable embedding layer.
                                                     The word2vec model outperformed the others with a final accuracy of 0.52.
                                                 </li>
                                             </ul>
@@ -187,7 +195,11 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Pink Floyd lyric generator</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Pink-Floyd-lyrics-LSTM">
+                                                <b>Pink Floyd lyric generator</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
@@ -220,7 +232,11 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Neural Style Transfer Algorithm</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/NSTalgo">
+                                                <b>Neural Style Transfer Algorithm</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
@@ -244,7 +260,11 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Multithreaded merge-sort</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Mergesort-multithreading">
+                                                <b>Multithreaded merge-sort</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
@@ -270,7 +290,11 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "10px" }}><b>ChatApp</b></h4>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "10px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/ChatApp">
+                                                <b>ChatApp</b>
+                                            </a>
+                                        </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
