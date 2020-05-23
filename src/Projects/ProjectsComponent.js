@@ -159,7 +159,7 @@ Deep Learning</b></h4>
                                 </Row>
                                 <Row>
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Anomaly detection in a panoramic mouth X-ray</b></h4>
+                                        <h4 className="vertical-timeline-element-title" style={{ fontFamily: "Raleway", marginTop: "20px" }}><b>Anomaly detection in a panoramic dental X-rays using machine learning</b></h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
                                             <ul style={{ paddingLeft: "15px" }}>
                                                 <li>
@@ -301,28 +301,14 @@ Deep Learning</b></h4>
                                                     Made an Android chat application with real-time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
                                                 </li>
                                                 <li>
-                                                    Extensively got to use learn firebase and the Android SDK.
+                                                    Extensively got to use and learn about firebase and the Android SDK.
                                                 </li>
                                             </ul>
                                         </p>
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
-                            {/* <Card>
-                                <CardTitle style={{ fontFamily: "Raleway", marginLeft: "15px", marginTop: "30px" }}>Cats vs Dogs classifier</CardTitle>
-                                <CardSubtitle style={{ marginLeft: "15px", marginTop: "5px", fontFamily: "Raleway", fontWeight: "300" }}>December 2018</CardSubtitle>
-                                <CardBody>
-                                    <div style={{ textAlign: "center", marginBottom: "10px" }}>
-                                        <CardImg top src={catvdogs} alt="Cats vs dogs" />
-                                    </div>
-                                    <span style={{ fontFamily: "Source Sans Pro" }}>
-                                        Got introduced to CNNs by making one to classify an input image as either a cat or a dog.
-                                                </span>
-                                </CardBody>
-                            </Card> */}
                         </VerticalTimeline>
-                        {/* </CardBody>
-                        </Card> */}
                     </div>
                 </div>
                 <Footer />

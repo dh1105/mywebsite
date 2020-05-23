@@ -41,6 +41,9 @@ class Header extends Component {
                                 <NavLink className="nav-link" to='/projects'><span style={{fontFamily: "Raleway"}}>PROJECTS</span></NavLink>
                             </NavItem>
                             <NavItem style={{ marginLeft: '10px' }}>
+                                <NavLink className="nav-link" to='/publications'><span style={{fontFamily: "Raleway"}}>PUBLICATIONS</span></NavLink>
+                            </NavItem>
+                            <NavItem style={{ marginLeft: '10px' }}>
                                 <NavLink className="nav-link" to='/contact'><span style={{fontFamily: "Raleway"}}>CONTACT</span></NavLink>
                             </NavItem>
                         </Nav>

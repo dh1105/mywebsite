@@ -6,6 +6,7 @@ import Home from './Home/HomeComponent'
 import Resume from './Resume/ResumeComponent'
 import Projects from './Projects/ProjectsComponent'
 import Contact from './Contact/ContactComponent'
+import Publications from './Publications/PublicationsComponent'
 
 class Main extends Component {
 
@@ -15,9 +16,9 @@ class Main extends Component {
             <HashRouter>
                 <Switch>
                     <Route path="/home" component={Home} />
-                    {/* <Route path="/about" component={AboutMe} /> */}
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Projects} />
+                    <Route path="/publications" component={Publications} />
                     <Route path="/contact" component={Contact} />
                     <Redirect to="/home" />
                 </Switch>
