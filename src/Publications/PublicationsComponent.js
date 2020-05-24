@@ -6,6 +6,10 @@ import { Card, CardBody } from 'reactstrap';
 
 class Publications extends Component {
 
+    componentWillMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div>

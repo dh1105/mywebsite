@@ -203,6 +203,7 @@ class Resume extends Component {
                         <Row style={{ marginLeft: '1px' }}>
                             <h5 className="resume-heading" onClick={() => this.scrollToElement("education")}>Education</h5>
                             <h5 className="resume-heading" onClick={() => this.scrollToElement("experience")}>Experience</h5>
+                            <h5 className="resume-heading" onClick={() => this.scrollToElement("achievments")}>Achievments</h5>
                             <h5 className="resume-heading" onClick={() => this.scrollToElement("skills")}>Skills</h5>
                             <h5 className="resume-heading" onClick={() => this.scrollToElement("courses")}>Courses</h5>
                         </Row>
@@ -228,9 +229,6 @@ class Resume extends Component {
                                     </Col>
                                 </Row>
                             </VerticalTimelineElement>
-                            {/* <div className="App">
-                                <h5 style={headingFont}><b>Experience</b></h5>
-                            </div> */}
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
                                 date="July 2019 - Present"
@@ -244,8 +242,10 @@ class Resume extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - R&D Engineer</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
-                                            <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop a CLI interface for file storage</li>
-                                            <li style={sentenceFont}>Understanding the product end-to-end by developing features and testing their functionality</li>
+                                            <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop and maintain the manageability layer for the product</li>
+                                            <li style={sentenceFont}>Responsible for feature development and maintance for the command line interface along with the RESTful backend of the product</li>
+                                            <li style={sentenceFont}>Ensuring robust, enterprise level code by carrying out extensive dev testing for developed features or bug fixes to reduce QA load</li>
+                                            <li style={sentenceFont}>Maintaince and pushing code changes to customer facing release branches with hot fixes, bug fixes and new features</li>
                                         </ul>
                                     </Col>
                                 </Row>
@@ -353,8 +353,33 @@ class Resume extends Component {
                         </VerticalTimeline>
                         <Card style={{ width: '100%', marginBottom: '30px' }}>
                             <CardBody>
+                                <Element name="achievments" />
+                                <div className="App" style={{ marginTop: '30px', marginBottom: '30px' }}>
+                                    <h4 style={headingFont}><b>Achievments</b></h4>
+                                </div>
+                                <div style={{ marginBottom: '50px' }} >
+                                    <ol>
+                                        <li style={{marginBottom: "15px"}}>
+                                            <span style={headingFont}><b>HPE International women's day hackathon winners, HPE R&D Bangalore, March 2020</b></span><br />
+                                            Finished first while competing with over 60 teams. Developed an Android application, Pinwheel, which would compute 'safety scores' of all routes on Google maps between two points
+                                            in a city. The score was computed based on the time of the day, traffic density, closeness of police stations and hospitals to a route and the
+                                            availability of public transport. The user is thus recommended the safest route between two points.
+                                        </li>
+                                        <li style={{marginBottom: "15px"}}>
+                                            <span style={headingFont}><b>DAAD scholarship, German government, May 2018</b></span><br />
+                                            A scholarship awarded by the DAAD, an organisation under the German government, based in merit ti carry out a research internship al
+                                            Hochschule Emden Leer for a period of 8 weeks.
+                                        </li>
+                                        <li>
+                                            <span style={headingFont}><b>Finalists Smart India Hackathon 2018, Government of Telangana, March 2018</b></span><br/>
+                                            Lead a team of 5 to the finals of India's biggest hackathon, the Smart India Hackathon 2018. Finished in the top 20 teams amongst
+                                            2000 teams. Our project involved carrying out social media sentiment analysis to evaluate the satification of citizens with respect to
+                                            the governments policies. 
+                                        </li>
+                                    </ol>
+                                </div>
                                 <Element name="skills" />
-                                <div className="App" style={{ marginTop: '30px', marginBottom: '20px' }}>
+                                <div className="App" style={{ marginTop: '30px', marginBottom: '30px' }}>
                                     <h4 style={headingFont}><b>Skills</b></h4>
                                 </div>
                                 <div style={{ marginBottom: '30px' }} className="App">
@@ -377,7 +402,6 @@ class Resume extends Component {
                                         <b>CSE 3101</b><span style={courseListStyle}>: Computer architecture</span>
                                         <b>CSE 3102</b><span style={courseListStyle}>: Operating systems</span>
                                         <b>CSE 3102</b><span style={courseListStyle}>: Computer networks</span>
-                                        <b>CSE 2202</b><span style={courseListStyle}>: Design and analysis of algorithms</span>
                                         <b>CSE 4027</b><span style={courseListStyle}>: Mobile application development</span>
                                         <b>CSE 3201</b><span style={courseListStyle}>: Compiler design</span>
                                         <b>CSE 3202</b><span style={courseListStyle}>: Parallel computer architecture and programming</span>
