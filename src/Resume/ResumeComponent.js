@@ -359,22 +359,21 @@ class Resume extends Component {
                                 </div>
                                 <div style={{ marginBottom: '50px' }} >
                                     <ol>
-                                        <li style={{marginBottom: "15px"}}>
+                                        <li style={{ marginBottom: "15px" }}>
                                             <span style={headingFont}><b>HPE International women's day hackathon winners, HPE R&D Bangalore, March 2020</b></span><br />
-                                            Finished first while competing with over 60 teams. Developed an Android application, Pinwheel, which would compute 'safety scores' of all routes on Google maps between two points
-                                            in a city. The score was computed based on the time of the day, traffic density, closeness of police stations and hospitals to a route and the
-                                            availability of public transport. The user is thus recommended the safest route between two points.
-                                        </li>
-                                        <li style={{marginBottom: "15px"}}>
+                                            Finished first while competing with over 60 teams. Developed an Android application, Pinwheel, which would compute
+                                            'safety scores' of all routes on Google maps between two points in a city. The score was calculated based on the time
+                                            of the day, traffic density, closeness of police stations and hospitals to a route and the availability of public transport.
+                                            The user is thus recommended the safest way between two points.</li>
+                                        <li style={{ marginBottom: "15px" }}>
                                             <span style={headingFont}><b>DAAD scholarship, German government, May 2018</b></span><br />
-                                            A scholarship awarded by the DAAD, an organisation under the German government, based in merit ti carry out a research internship al
+                                            A scholarship awarded by the DAAD, an organisation under the German government, based on merit to carry out a research internship at
                                             Hochschule Emden Leer for a period of 8 weeks.
                                         </li>
                                         <li>
-                                            <span style={headingFont}><b>Finalists Smart India Hackathon 2018, Government of Telangana, March 2018</b></span><br/>
+                                            <span style={headingFont}><b>Finalists Smart India Hackathon 2018, Government of Telangana, March 2018</b></span><br />
                                             Lead a team of 5 to the finals of India's biggest hackathon, the Smart India Hackathon 2018. Finished in the top 20 teams amongst
-                                            2000 teams. Our project involved carrying out social media sentiment analysis to evaluate the satification of citizens with respect to
-                                            the governments policies. 
+                                            2000 teams. Our project involved carrying out social media sentiment analysis to evaluate the satisfaction of citizens concerning the government's policies.
                                         </li>
                                     </ol>
                                 </div>
