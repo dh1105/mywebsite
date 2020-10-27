@@ -34,7 +34,7 @@ const facts = {
     },
     aviation: {
         img: <img src={plane} style={{ width: '50%', height: 'auto', marginTop: '10px' }} alt="Plane" />,
-        fact: <span style={{ fontFamily: "Source Sans Pro" }}>I am an enormous aviation enthusiast. Whenever I travel, I always try to sit on a new aircraft.
+        fact: <span style={{ fontFamily: "Source Sans Pro" }}>I am a huge aviation enthusiast. Whenever I travel, I always try to sit in a new aircraft.
         I mastered the game - Microsoft Flight Simulator - in grade 5 and can fly a plane on it. So if by chance you are in a flight which needs a pilot,
         I actually might be of help!</span>
     }
@@ -76,9 +76,9 @@ class Home extends Component {
                                             </div>
                                             <p style={{ fontFamily: "Source Sans Pro" }}>
                                                 I am a Computer Science undergraduate major from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
-                                        <b> web development</b> across the full-stack using Reactjs and Flask and <b>deep learning</b> using CNNs and LSTMs. I love to develop innovative solutions to problems I have faced in my daily life or have seen people close to me face. My academic research
-                                        interests lie in the application of deep learning to develop assistive technologies in the realms of <b>computer vision</b>, <b>medical image analysis</b> and <b>NLP</b>. I am currently working
-                                        as a <b>Research and Development Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
+                                        <b> web development</b> across the full-stack using Reactjs and Flask and the application of <b>deep learning</b> to NLP and medical image analysis problems. I love to develop innovative solutions to problems I have faced in my daily life. My academic research
+                                        interests lie in field of <b>computational semantics</b>. I wish to work on improving the semantic analysis capabilities of smart assistants in the near future. I am currently working
+                                        as a <b>Software Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
                                 </p>
                                         </Col>
                                     </Row>

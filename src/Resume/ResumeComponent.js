@@ -240,7 +240,7 @@ class Resume extends Component {
                                         <a target="_blank" rel="noopener noreferrer" href="https://hpe.com/"><img src={hpe} style={{ height: "auto", width: "80%" }} alt="Hewlett Packard Enterprise" /></a>
                                     </Col> */}
                                     <Col style={{ textAlign: "left" }}>
-                                        <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - R&D Engineer</b></a></h4>
+                                        <h4 style={headingFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://hpe.com/"><b>Hewlett Packard Enterprise - Software Engineer</b></a></h4>
                                         <ul style={{ padding: '0px 0px 0px 15px' }}>
                                             <li style={sentenceFont}>Working in the 3PAR File Persona Team to develop and maintain the manageability layer for the product</li>
                                             <li style={sentenceFont}>Responsible for feature development and maintance for the command line interface along with the RESTful backend of the product</li>

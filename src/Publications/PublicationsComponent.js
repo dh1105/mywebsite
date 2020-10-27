@@ -22,14 +22,21 @@ class Publications extends Component {
                                 <hr />
                                 <ol style={{ paddingLeft: "15px", fontFamily: "Source Sans Pro" }}>
                                     <li style={{marginBottom: "10px"}}>
-                                        Dhruv Verma and Muralikrishna SN (2020, July 2-4) 
-                                        <b> 'Semantic similarity between short paragraphs using Deep Learning'</b> - 
+                                        Dhruv Verma, Dr Sunaina Puri, Dr Srikanth Prabhu and Dr Komal Smriti 
+                                        (2020, November 16-19) <b>'Anomaly detection in panoramic dental X-rays using a hybrid Deep Learning and Machine Learning approach'</b> -
+                                        Paper accepted at the IEEE Region 10 TENCON 2020 conference,
+                                        Osaka, Japan.
+                                    </li>
+                                    <li style={{marginBottom: "10px"}}>
+                                        Dhruv Verma and Muralikrishna SN 
+                                        (2020, July 2-4) <span className="course"><a target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }} href="https://ieeexplore.ieee.org/document/9198445">
+                                        <b><u>'Semantic similarity between short paragraphs using Deep Learning'</u></b></a></span> - 
                                         Paper accepted at the 6th IEEE International Conference on Electronics, Computing and Communication Technologies 2020, 
                                         Bangalore, India.
                                     </li>
                                     <li>
-                                        Dr Srikanth Prabhu, Dhruv Verma, Dr Sunaina Puri and Dr Komal Smriti (2018, November 2-4)
-                                        <b> 'Anomaly detection in a panoramic dental X-rays using machine learning'</b> - 
+                                        Dr Srikanth Prabhu, Dhruv Verma, Dr Sunaina Puri and Dr Komal Smriti 
+                                        (2018, November 2-4) <b>'Anomaly detection in a panoramic dental X-ray using machine learning'</b> - 
                                         Poster accepted at Kasturba Medical college's conference KAMLSCON 2018,
                                         Manipal, India.
                                     </li>
