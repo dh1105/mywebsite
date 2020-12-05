@@ -49,7 +49,7 @@ class Projects extends Component {
                                     <Col style={{ textAlign: "left" }}>
                                         <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
                                             <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Sentence-Entailment">
-                                                <b>Sentence Entailment the on MultiNLI and SNLI datasets</b>
+                                                <b>Sentence Entailment on the MultiNLI and SNLI datasets</b>
                                             </a>
                                         </h4>
                                         <p style={{ fontFamily: "Source Sans Pro" }}>
