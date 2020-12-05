@@ -14,7 +14,9 @@ import mergesort from '../assets/mergesort.png'
 import pinkfloyd from '../assets/pinkfloyd.jpg'
 import reddit from '../assets/reddit_logo.png'
 import poster from '../assets/dark.jpg'
+import sentenceEntailment from '../assets/sentence_entailment.png'
 import { FaTooth, FaPaintBrush, FaAndroid, FaCode, FaMusic, FaReddit, FaFilm } from 'react-icons/fa'
+import { MdTextFields } from 'react-icons/md'
 import { MdLanguage } from 'react-icons/md'
 
 class Projects extends Component {
@@ -29,13 +31,46 @@ class Projects extends Component {
                 <Header />
                 <div className="container">
                     <div className="col-auto">
-                        {/* <h1 style={{marginTop: '10px'}}>Hello, welcome to my website!</h1> */}
-                        {/* <Card style={{ width: '100%', marginTop: '100px', marginBottom: '30px' }}>
-                            <CardBody> */}
                         <h2 style={{ marginTop: '100px', marginBottom: '20px', fontFamily: "Raleway" }}><b>Projects</b></h2>
                         <p style={{ fontFamily: "Raleway" }}>A selection of some of my projects</p>
                         <hr />
                         <VerticalTimeline>
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="October 2020 - Present"
+                                iconStyle={{ background: 'rgb(0, 35, 102)', color: '#fff' }}
+                                icon={<MdTextFields />}>
+                                <Row>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={sentenceEntailment} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="Word2Vec" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Sentence-Entailment">
+                                                <b>Sentence Entailment the on MultiNLI and SNLI datasets</b>
+                                            </a>
+                                        </h4>
+                                        <p style={{ fontFamily: "Source Sans Pro" }}>
+                                            <ul style={{ paddingLeft: "15px" }}>
+                                                <li>
+                                                    Currently working on benchmarking Deep Learning models such as BiLSTMs, BERT, CNN-LSTMs on the task of sentence
+                                                    entailment using two prominent textual entailment datasets - MultiNLI and SNLI.
+                                                </li>
+                                                <li>
+                                                    Experimentanlly trying to achieve the performance of above mentioned models as reported in the paper 'A Broad-Coverage Challenge Corpus for
+                                                    Sentence Understanding through Inference' by Bowman et al..
+                                                </li>
+                                                <li>
+                                                    Implementing attention mechanisms such as max-pooling attention and symbolic similarity attention. Additionally working on incorporating contextual ELMO and BERT
+                                                    embeddings in the BiLSTM models with attention to check for any performance gain.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </Col>
+                                </Row>
+                            </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
                                 date="July 2019 - May 2020"
