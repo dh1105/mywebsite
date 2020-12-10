@@ -1,17 +1,8 @@
-import ReactCardFlip from 'react-card-flip';
 import React, { Component } from 'react'
 import {
     Card, CardBody
 } from 'reactstrap';
-
-const FlippyStyle = {
-    width: '130px',
-    height: '130px',
-    textAlign: 'center',
-    fontFamily: "Raleway",
-    justifyContent: 'center',
-    color: '#FFF'
-}
+import "./FlipCardStyle.css"
 
 class CardFlip extends Component {
 
@@ -22,63 +13,25 @@ class CardFlip extends Component {
         }
     }
 
-    flipBack = () => {
-        if (this.state.isFlipped) {
-            return
-        }
+    flip = () => {
         this.setState({
-            isFlipped: true
-        })
-    }
-
-    flipForward = () => {
-        if (!this.state.isFlipped) {
-            return
-        }
-        this.setState({
-            isFlipped: false
+            isFlipped: !this.state.isFlipped
         })
     }
 
     render() {
         return (
-            <ReactCardFlip containerStyle={FlippyStyle} isFlipped={this.state.isFlipped} flipDirection="horizontal">
-                <Card key="front"
-                    style={{
-                        backgroundColor: '#4478A6',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        borderRadius: '5px',
-                        width: '100%',
-                        height: '100%',
-                        border: 'none',
-                        fontSize: '85%',
-                        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-                    }} onMouseEnter={this.flipBack}>
-                    {/* This is the front of the card.
-              <button onClick={this.handleClick}>Click to flip</button> */}
-                    <CardBody style={{ height: '100%', width: '100%', marginTop: '10px' }}>
+            <div className="flip-card">
+                <Card className="flip-card-inner">
+                    <CardBody className="flip-card-front">
                         {this.props.icon}
                         <p>{this.props.text}</p>
                     </CardBody>
-                </Card>
-
-                <Card key="back" style={{
-                    backgroundColor: '#4478A6',
-                    borderRadius: '5px',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '100%',
-                    height: '100%',
-                    border: 'none',
-                    fontSize: '100%',
-                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-                }} onMouseLeave={this.flipForward}>
-                    <CardBody style={{ height: '100%', width: '100%' }}>
+                    <CardBody className="flip-card-back">
                         {this.props.backText}
                     </CardBody>
                 </Card>
-            </ReactCardFlip>
+            </div>
         )
     }
 
