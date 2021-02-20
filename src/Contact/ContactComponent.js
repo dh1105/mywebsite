@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Header from '../HeaderComponent'
 import Footer from '../FooterComponent'
 import { Card, CardBody } from 'reactstrap';
-import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope, FaMedium } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope, FaMedium } from 'react-icons/fa'
+import { SiGooglescholar } from 'react-icons/si'
 import '../Icons.css'
 
 class Contact extends Component {
@@ -35,11 +36,11 @@ class Contact extends Component {
                                 <div className="row" style={{marginTop: '20px'}}>
                                     <div className="col-auto">
                                         <FaGithub size={20} className="contact-icon" onClick={() => this.openUrl("https://github.com/dh1105")} />
-                                        <FaLinkedinIn size={20} className="contact-icon" onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
-                                        <FaInstagram size={20} className="contact-icon" onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
-                                        <FaFacebookF size={20} className="contact-icon" onClick={() => this.openUrl("https://www.facebook.com/dhruv2scs")} />
+                                        <SiGooglescholar size={20} className="contact-icon" onClick={() => this.openUrl("https://scholar.google.com/citations?user=0RASMhYAAAAJ&hl=en")} />
                                         <FaMedium size={20} className="contact-icon" onClick={() => this.openUrl("https://medium.com/@dh1105")} />
                                         <FaEnvelope size={20} className="contact-icon" onClick={this.onClickMail} />
+                                        <FaLinkedinIn size={20} className="contact-icon" onClick={() => this.openUrl("https://www.linkedin.com/in/dhruv-verma-273190160/")} />
+                                        <FaInstagram size={20} className="contact-icon" onClick={() => this.openUrl("https://www.instagram.com/dh1105/?hl=en")} />
                                     </div>
                                 </div>
                             </CardBody>
