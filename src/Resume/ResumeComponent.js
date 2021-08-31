@@ -213,6 +213,22 @@ class Resume extends Component {
                             <h5 style={headingFont}><b>Education</b></h5>
                         </div> */}
                         <VerticalTimeline>
+                        <VerticalTimelineElement
+                                className="vertical-timeline-element--education"
+                                date="2021 - Present"
+                                iconStyle={{ background: '#e91e63', color: '#fff' }}
+                                icon={<FaGraduationCap />}>
+                                <Element name="education" />
+                                <Row>
+                                    {/* <Col sm="3" md="3" lg="3" style={{ textAlign: "center", marginBottom: "20px" }}>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://manipal.edu/mit.html"><img src={manipal} style={{ height: "auto", width: "100px" }} alt="Manipal Insitute of Technology" /></a>
+                                    </Col> */}
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={headingFont}><b>Masters of Science in Computer Science</b></h4>
+                                        <span style={sentenceFont} className="resume-heading" ><a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://www.cs.stonybrook.edu/">Stony Brook University, New York</a></span>
+                                    </Col>
+                                </Row>
+                            </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--education"
                                 date="2015 - 2019"

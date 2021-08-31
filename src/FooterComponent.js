@@ -8,7 +8,7 @@ import "./Icons.css"
 class Footer extends Component {
 
     onClickMail = () => {
-        window.location.href = `mailto:dhruv.verma110597@gmail.com`;
+        window.location.href = `mailto:dhruv.verma@stonybrook.edu`;
     }
 
     openUrl = (url) => {
@@ -24,9 +24,9 @@ class Footer extends Component {
                         <img src={myimage} alt="Dhruv Verma" style={{ height: '200px', width: '200px', WebkitBorderRadius: '50%', boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }} />
                     </div>
                     <h3 style={{ marginTop: '20px', fontFamily: "Raleway" }}>Dhruv Verma</h3>
-                    <span className="footer-email" ><a style={{color: 'inherit'}} href="mailto:dhruv.verma110597@gmail.com">dhruv.verma110597@gmail.com</a></span>
+                    <span className="footer-email" ><a style={{color: 'inherit'}} href="mailto:dhruv.verma@stonybrook.edu">dhruv.verma@stonybrook.edu</a></span>
                     <hr />
-                    <p style={{ marginTop: '10px', fontFamily: "Source Sans Pro", fontWeight: "300" }}>Hi, I am Dhruv. I like to make things. I am a Computer Science undergraduate from Manipal Institute of Technology and am currently working at Hewlett Packard Enterprise in Bangalore, India.</p>
+                    <p style={{ marginTop: '10px', fontFamily: "Source Sans Pro", fontWeight: "300" }}>Hi, I am Dhruv. I like to make things. I am currently doing my Master's of Science in Computer Science from Stony Brook University. I am looking for Software Engineering or Research Scientist internships for Summer 2022.</p>
                 </div>
                 <div className="footer">
                     <div className="container">

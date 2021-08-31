@@ -75,10 +75,9 @@ class Home extends Component {
                                                 <img src={myimage} alt="Dhruv Verma" style={{ height: '150px', width: '150px', WebkitBorderRadius: '50%' }} />
                                             </div>
                                             <p style={{ fontFamily: "Source Sans Pro" }}>
-                                                I am a Computer Science undergraduate major from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
+                                                I am a Computer Science graduate student at Stony Brook University, New York. I did my undergraduate degree in Computer Science from Manipal Institute of Technology, Manipal. I have worked on projects in the field of <b>Android development</b>,
                                         <b> web development</b> across the full-stack using ReactJS and Flask and the application of <b>deep learning</b> to NLP and medical image analysis problems. I love to develop innovative solutions to problems I have faced in my daily life. My academic research
-                                        interests lie in field of <b>computational semantics</b>. I wish to work on improving the semantic analysis capabilities of smart assistants in the near future. I am currently working
-                                        as a <b>Software Engineer at Hewlett Packard Enterprise</b> in the 3PAR File Persona team.
+                                        interests lie in field of <b>computational semantics</b>. I wish to work on improving the semantic analysis capabilities of smart assistants in the near future. <b>I am looking for Software Engineering or Research Scientist internships for Summer 2022.</b>
                                 </p>
                                         </Col>
                                     </Row>
