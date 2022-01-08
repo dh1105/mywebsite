@@ -26,7 +26,7 @@ class Footer extends Component {
                     <h3 style={{ marginTop: '20px', fontFamily: "Raleway" }}>Dhruv Verma</h3>
                     <span className="footer-email" ><a style={{color: 'inherit'}} href="mailto:dhruv.verma@stonybrook.edu">dhruv.verma@stonybrook.edu</a></span>
                     <hr />
-                    <p style={{ marginTop: '10px', fontFamily: "Source Sans Pro", fontWeight: "300" }}>Hi, I am Dhruv. I like to make things. I am currently doing my Master's of Science in Computer Science from Stony Brook University. I am looking for Software Engineering or Research Scientist internships for Summer 2022.</p>
+                    <p style={{ marginTop: '10px', fontFamily: "Source Sans Pro", fontWeight: "300" }}>Hi, I am Dhruv. I like to make things. I am currently doing my Master's of Science in Computer Science from Stony Brook University.</p>
                 </div>
                 <div className="footer">
                     <div className="container">

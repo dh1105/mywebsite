@@ -6,16 +6,15 @@ import {
 } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 // import snowy from '../assets/snowy.jpg'
-import nstsnowy from '../assets/nstsnowy.jpg'
 import pan from '../assets/pan.jpg'
 import word2vec from '../assets/word2vec.png'
-import chat from '../assets/chat.jpg'
 import mergesort from '../assets/mergesort.png'
 import pinkfloyd from '../assets/pinkfloyd.jpg'
 import reddit from '../assets/reddit_logo.png'
 import poster from '../assets/dark.jpg'
 import sentenceEntailment from '../assets/sentence_entailment.png'
-import { FaTooth, FaPaintBrush, FaAndroid, FaCode, FaMusic, FaReddit, FaFilm } from 'react-icons/fa'
+import entityMarkers from '../assets/entity_markers.png'
+import { FaTooth, FaCode, FaMusic, FaReddit, FaFilm } from 'react-icons/fa'
 import { MdTextFields } from 'react-icons/md'
 import { MdLanguage } from 'react-icons/md'
 
@@ -35,9 +34,46 @@ class Projects extends Component {
                         <p style={{ fontFamily: "Raleway" }}>A selection of some of my projects</p>
                         <hr />
                         <VerticalTimeline>
+                        <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="August 2021 - December 2021"
+                                iconStyle={{ background: '#228B22', color: '#fff' }}
+                                icon={<MdTextFields />}>
+                                <Row>
+                                    <Col style={{ textAlign: "center" }}>
+                                        <img src={entityMarkers} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="EntityMarkers" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{ textAlign: "left" }}>
+                                        <h4 style={{ fontFamily: "Raleway", marginTop: "20px" }}>
+                                            {/* <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/Sentence-Entailment">
+                                                <b>Sentence Entailment on the MultiNLI and SNLI datasets</b>
+                                            </a> */}
+                                            <b>Entity relation classification in biomedical paper abstracts</b>
+                                        </h4>
+                                        <p style={{ fontFamily: "Source Sans Pro" }}>
+                                            <ul style={{ paddingLeft: "15px" }}>
+                                                <li>
+                                                    Worked in the Language Understanding and Reasoning Lab at Stony Brook to develop a classifier to determine whether two given biomedical entities in a paper abstract affect
+                                                    each other in a biological context.
+                                                </li>
+                                                <li>
+                                                    Improved the baseline from an accuracy of 65% to 71% using the kamalkraj/bioelectra-base-discriminator-pubmed-pmc model and training the classification head
+                                                    using the entity start positions as described in 'Matching the Blanks: Distributional Similarity for Relation Learning' by Soares et al..
+                                                </li>
+                                                <li>
+                                                    Evaluated the classification errors of the final model by applying granular analysis to find potential hypothesis for misclassification. Modularized the 
+                                                    model implementation to present the training and evaluation code as a command line interface system.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </Col>
+                                </Row>
+                            </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="October 2020 - Present"
+                                date="October 2020 - January 2021"
                                 iconStyle={{ background: 'rgb(0, 35, 102)', color: '#fff' }}
                                 icon={<MdTextFields />}>
                                 <Row>
@@ -257,34 +293,6 @@ Deep Learning</b></h4>
                             </VerticalTimelineElement>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="March 2019"
-                                iconStyle={{ background: '#228B22', color: '#fff' }}
-                                icon={<FaPaintBrush />}>
-                                <Row>
-                                    <Col style={{ textAlign: "center" }}>
-                                        <img src={nstsnowy} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="NST algo" />
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "20px" }}>
-                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/NSTalgo">
-                                                <b>Neural Style Transfer Algorithm</b>
-                                            </a>
-                                        </h4>
-                                        <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            <ul style={{ paddingLeft: "15px" }}>
-                                                <li>
-                                                    Using a CNN, implemented the Neural Style Transfer algorithm in MATLAB by Gatys et al (2015) to generate a new image from two input images by taking the
-                                                    content of the first image and the style of the second. This is a picture of my pup generated using the Starry Night by Van Gogh!
-                                                </li>
-                                            </ul>
-                                        </p>
-                                    </Col>
-                                </Row>
-                            </VerticalTimelineElement>
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
                                 date="October 2017"
                                 iconStyle={{ background: '#393f4d', color: '#fff' }}
                                 icon={<FaCode />}>
@@ -307,36 +315,6 @@ Deep Learning</b></h4>
                                                 </li>
                                                 <li>
                                                     The algorithm created a thread for each subarray and these threads were then used to sort and join each element to formt the sorted array.
-                                                </li>
-                                            </ul>
-                                        </p>
-                                    </Col>
-                                </Row>
-                            </VerticalTimelineElement>
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                date="August 2016 - November 2016"
-                                iconStyle={{ background: '#3DDB86', color: '#fff' }}
-                                icon={<FaAndroid />}>
-                                <Row>
-                                    <Col style={{ textAlign: "center" }}>
-                                        <img src={chat} style={{ height: "auto", width: "100%", marginTop: "10px" }} alt="ChatApp" />
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col style={{ textAlign: "left" }}>
-                                        <h4 className="vertical-timeline-element-title resume-heading" style={{ fontFamily: "Raleway", marginTop: "10px" }}>
-                                            <a target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }} href="https://github.com/dh1105/ChatApp">
-                                                <b>ChatApp</b>
-                                            </a>
-                                        </h4>
-                                        <p style={{ fontFamily: "Source Sans Pro" }}>
-                                            <ul style={{ paddingLeft: "15px" }}>
-                                                <li>
-                                                    Made an Android chat application with real-time messaging and push notifications as a friend of mine and I were bored of using traditional chat applications.
-                                                </li>
-                                                <li>
-                                                    Extensively got to use and learn about firebase and the Android SDK.
                                                 </li>
                                             </ul>
                                         </p>
